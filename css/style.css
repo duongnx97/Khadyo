@@ -10,7 +10,6 @@ body {
     margin: 0;
     color: #2a435d;
     font-family: "Roboto", sans-serif;
-    background-color: #2a435d;
 }
 
 h1 {
@@ -197,7 +196,7 @@ button {
 }
 
 
-/* button styles */
+/* Button styles */
 
 .btn {
     background: #cc3333;
@@ -310,7 +309,16 @@ button {
 }
 
 
-/* header top */
+/* Header top */
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
 
 header .header-top {
     background: #000000;
@@ -355,7 +363,7 @@ header .header-top .social-box span a:hover {
 }
 
 
-/* responsive header top */
+/* Responsive Header top */
 
 @media (max-width: 767.98px) {
     header .header-top .contact-box span {
@@ -385,7 +393,7 @@ header .header-top .social-box span a:hover {
 }
 
 
-/* header bottom - logo */
+/* Header bottom - Logo */
 
 header .header-bottom .logo {
     width: 140px;
@@ -410,7 +418,7 @@ header .header-bottom .logo img {
 }
 
 
-/* header bottom - nav menu */
+/* Header bottom - Nav Menu */
 
 .main-menu {
     display: -webkit-box;
@@ -593,7 +601,7 @@ header .header-bottom .logo img {
 }
 
 
-/* responsive header bottom - nav menu */
+/* Responsive Header bottom - Nav Menu */
 
 @media (max-width: 767.98px) {
     .main-menu li a {
@@ -665,7 +673,7 @@ header .header-bottom .logo img {
 }
 
 
-/* header bottom - customer area */
+/* Header bottom - Customer area */
 
 header .header-bottom .customer-area {
     text-align: right;
@@ -704,7 +712,7 @@ header .header-bottom .customer-area .btn {
 }
 
 
-/* responsive header bottom - customer area */
+/* Responsive Header bottom - Customer area */
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     header .header-bottom .customer-area span {
@@ -747,6 +755,464 @@ header .header-bottom .customer-area .btn {
     header .header-bottom .customer-area .btn {
         font-size: 12px;
         padding: 5px 5px;
+    }
+}
+
+
+/* Banner area */
+
+.banner-area {
+    position: relative;
+    background-color: #131313;
+    overflow: hidden;
+}
+
+.banner-area:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 20%;
+    width: 450px;
+    height: 100%;
+    background-color: #271C0A;
+}
+
+
+/* Banner content */
+
+.banner-area .banner-content {
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+.banner-area .banner-content h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.banner-area .banner-content h1 span {
+    color: #ff9933;
+}
+
+.banner-area .banner-content .buyone-shape {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.banner-area .banner-content .buyone-shape .banner-tag {
+    border: 1px dotted #ffffff;
+    border-right: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    padding-right: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.banner-area .banner-content .buyone-shape .banner-tag h5 {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.banner-area .banner-content .buyone-shape .banner-badge {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background: #cc3333;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.banner-area .banner-content .buyone-shape .banner-badge::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    right: -39px;
+    height: 14px;
+    top: -1px;
+    border-style: solid;
+    border-width: 38px 0 28px 40px;
+    border-color: transparent transparent transparent #cc3333;
+}
+
+.banner-area .banner-content .order-box {
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.banner-area .banner-content .order-box .order-img img {
+    width: inherit;
+}
+
+.banner-area .banner-content .order-box .order-content {
+    margin-left: 10px;
+}
+
+.banner-area .banner-content .order-box .order-content p {
+    color: #ffffff;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.banner-area .banner-content .order-box .order-content span {
+    color: #ff9933;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.banner-area .banner-content .order-box .btn {
+    padding: 15px 40px;
+    margin-left: 40px;
+}
+
+.banner-area .banner-content .price {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.banner-area .banner-content .price span {
+    color: #ff9933;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* Responsive Banner content */
+
+@media (max-width: 767.98px) {
+    .banner-area:before {
+        opacity: 0;
+    }
+    .banner-area .banner-content {
+        padding-top: 40px;
+    }
+    .banner-area .banner-content h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .buyone-shape {
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-tag h5 {
+        font-size: 20px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge {
+        font-size: 24px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge::after {
+        border-width: 29px 0 28px 40px;
+    }
+    .banner-area .banner-content .order-box .order-content span {
+        font-size: 16px;
+    }
+    .banner-area .banner-content .order-box .btn {
+        margin-left: 25px;
+    }
+    .banner-area .banner-content .price {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-area .banner-content .buyone-shape .banner-tag {
+        padding-right: 10px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge {
+        padding: 10px 6px;
+    }
+    .banner-area .banner-content .order-box .btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .banner-area .banner-content .buyone-shape .banner-tag {
+        padding-right: 10px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-tag h5 {
+        font-size: 16px;
+    }
+    .banner-area .banner-content .order-box .btn {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner-area:before {
+        opacity: 0;
+    }
+    .banner-area .banner-content {
+        padding-top: 40px;
+    }
+    .banner-area .banner-content h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .buyone-shape {
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-tag h5 {
+        font-size: 20px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge {
+        font-size: 24px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge::after {
+        border-width: 29px 0 28px 40px;
+    }
+    .banner-area .banner-content .order-box .order-content span {
+        font-size: 16px;
+    }
+    .banner-area .banner-content .order-box .btn {
+        margin-left: 30px;
+    }
+    .banner-area .banner-content .price {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .banner-area .banner-content {
+        padding-top: 40px;
+    }
+    .banner-area .banner-content h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .buyone-shape {
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-tag {
+        padding-right: 12px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-tag h5 {
+        font-size: 20px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge {
+        font-size: 24px;
+    }
+    .banner-area .banner-content .buyone-shape .banner-badge::after {
+        border-width: 29px 0 28px 40px;
+    }
+    .banner-area .banner-content .order-box .order-content span {
+        font-size: 16px;
+    }
+    .banner-area .banner-content .order-box .btn {
+        margin-left: 20px;
+    }
+    .banner-area .banner-content .price {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    .banner-area .banner-content .buyone-shape {
+        margin-bottom: 20px;
+    }
+    .banner-area .banner-content .price {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Banner shapes */
+
+.banner-area .banner-shapes img {
+    width: inherit;
+}
+
+.banner-area .banner-shapes .b-shape-1 {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+
+.banner-area .banner-shapes .b-shape-2 {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.banner-area .banner-shapes .b-shape-3 {
+    position: absolute;
+    top: 17%;
+    left: 2%;
+    width: 100px;
+    z-index: 0;
+}
+
+.banner-area .banner-shapes .b-shape-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.banner-area .banner-shapes .b-shape-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Banner item animations */
+
+.item-animateOne {
+    animation: animateOne 15s infinite ease-in-out;
+}
+
+@keyframes animateOne {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.item-animateTwo {
+    animation: animateTwo 15s infinite ease-in-out;
+}
+
+@keyframes animateTwo {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(-50px, 50px);
+        transform: translate(-50px, 50px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+.item-bounce {
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+
+/* Banner image shapes */
+
+.banner-area .banner-img {
+    position: relative;
+}
+
+.banner-area .banner-img img {
+    margin-left: 76px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.banner-area .banner-img .pizza-shapes .p-shape-1 {
+    position: absolute;
+    bottom: -15%;
+    left: -3%;
+    width: 75px;
+}
+
+.banner-area .banner-img .pizza-shapes .p-shape-2 {
+    position: absolute;
+    right: -27%;
+    top: 7%;
+    width: 76px;
+}
+
+.banner-area .banner-img .pizza-shapes .p-shape-3 {
+    position: absolute;
+    right: -9%;
+    top: -10%;
+}
+
+.banner-area .banner-img .pizza-shapes .p-shape-4 {
+    width: 170px;
+    top: 12%;
+    position: absolute;
+    left: -7%;
+}
+
+@media (max-width: 767.98px) {
+    .banner-area .banner-shapes {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner-area .banner-shapes img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .banner-area .banner-shapes img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    .banner-area .banner-img img {
+        margin-left: 76px;
+        width: inherit;
+        margin-top: 5px;
+    }
+    .banner-area .banner-shapes img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1599.98px) {
+    .banner-area .banner-img img {
+        margin-left: 76px;
+        width: inherit;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+    .banner-area .banner-img img {
+        margin-left: 76px;
+        width: inherit;
     }
 }
 
