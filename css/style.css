@@ -358,18 +358,24 @@ header .header-top .social-box span a:hover {
 /* responsive header top */
 
 @media (max-width: 767.98px) {
-    header .header-top .contact-box {
-        flex-direction: column;
-    }
     header .header-top .contact-box span {
-        margin: 0;
+        margin-right: 15px;
     }
     header .header-top .social-box span {
         margin-left: 20px;
     }
 }
 
+@media (max-width: 575.98px) {
+    header .header-top .contact-box {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 359.98px) {
+    header .header-top .contact-box span {
+        margin-right: 0;
+    }
     header .header-top .contact-box span a {
         font-size: 13px;
     }
