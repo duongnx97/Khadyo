@@ -1073,66 +1073,6 @@ header .header-bottom .customer-area .btn {
 }
 
 
-/* Banner item animations */
-
-.item-animateOne {
-    animation: animateOne 15s infinite ease-in-out;
-}
-
-@keyframes animateOne {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    50% {
-        -webkit-transform: translateX(-100px);
-        transform: translateX(-100px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
-.item-animateTwo {
-    animation: animateTwo 15s infinite ease-in-out;
-}
-
-@keyframes animateTwo {
-    0% {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-    50% {
-        -webkit-transform: translate(-50px, 50px);
-        transform: translate(-50px, 50px);
-    }
-    100% {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-}
-
-.item-bounce {
-    animation: bounce 3s infinite ease-in-out;
-}
-
-@keyframes bounce {
-    0% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-    50% {
-        -webkit-transform: translateY(10px);
-        transform: translateY(10px);
-    }
-    100% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-}
-
-
 /* Banner image shapes */
 
 .banner-area .banner-img {
@@ -1213,6 +1153,245 @@ header .header-bottom .customer-area .btn {
     .banner-area .banner-img img {
         margin-left: 76px;
         width: inherit;
+    }
+}
+
+
+/* Form */
+
+.form-area {
+    margin-top: -33px;
+    z-index: 1;
+}
+
+.form-area .form-box {
+    padding-left: 40px;
+    padding-right: 40px;
+    -webkit-box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+    box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+    background: #ffffff;
+    position: relative;
+}
+
+.form-area .form-box .form-shapes img {
+    width: inherit;
+}
+
+.form-area .form-box .form-shapes .fs-1 {
+    position: absolute;
+    top: 0;
+    left: -14px;
+}
+
+.form-area .form-box .form-shapes .fs-2 {
+    position: absolute;
+    top: 0;
+    right: -14px;
+}
+
+.form-area .form-box .form-shapes .fs-3 {
+    position: absolute;
+    top: 97px;
+    left: 115px;
+    width: 70px;
+}
+
+.form-area .form-box .form-shapes .fs-4 {
+    position: absolute;
+    top: 97px;
+    right: 115px;
+    width: 70px;
+}
+
+.form-area .form-box .form-shapes .fs-5 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 70px;
+}
+
+.form-area .form-box .form-shapes .fs-6 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 70px;
+}
+
+.form-area .form-box .form-shapes .fs-7 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+}
+
+.form-area .form-box .form-shapes .fs-8 {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 50px;
+}
+
+.form-area .form-box .form-wraper .form-item2 {
+    width: 23%;
+    padding: 15px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* background-image: linear-gradient(45deg, transparent 50%, blue 50%), linear-gradient(135deg, blue 50%, transparent 50%), linear-gradient(to right, skyblue, skyblue);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+    background-repeat: no-repeat; */
+}
+
+.form-area .form-box .form-wraper button {
+    background: #cc3333;
+    padding: 12px 40px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.form-area .form-box .form-wraper button:hover {
+    background: transparent;
+    color: #cc3333;
+    border: 1px solid #cc3333;
+}
+
+.writeto-us .contact-form-area {
+    -webkit-box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+    box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+    background: #ffffff;
+    padding: 40px 22px;
+}
+
+.writeto-us .contact-form-area h3 {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.writeto-us .contact-form-area h3 span {
+    color: #cc3333;
+}
+
+.writeto-us .contact-form-area form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.writeto-us .contact-form-area form textarea {
+    width: 100%;
+    padding: 20px 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.writeto-us .contact-form-area form button {
+    margin-top: 30px;
+}
+
+
+/* Responsive Form */
+
+@media (max-width: 767.98px) {
+    .form-area .form-box .form-shapes .fs-5 {
+        display: none;
+    }
+    .form-area .form-box .form-shapes .fs-6 {
+        display: none;
+    }
+    .form-area .form-box {
+        background-image: inherit;
+    }
+    .form-area .form-box .form-wraper .form-item2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-area .form-box .form-wraper button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .form-area .form-box {
+        background-image: inherit;
+    }
+    .form-area .form-box .form-wraper .form-item2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-area .form-box .form-wraper button {
+        width: 100%;
+    }
+}
+
+
+/* Item animations */
+
+.item-animateOne {
+    animation: animateOne 15s infinite ease-in-out;
+}
+
+@keyframes animateOne {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.item-animateTwo {
+    animation: animateTwo 15s infinite ease-in-out;
+}
+
+@keyframes animateTwo {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(-50px, 50px);
+        transform: translate(-50px, 50px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+.item-bounce {
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
     }
 }
 

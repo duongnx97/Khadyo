@@ -24,6 +24,41 @@
             }
         });
 
+        // MouseHover Animation home 1
+        var hoverLayer = $(".banner-area");
+        var heroImgOne = $(".p-shape-1");
+        var heroImgTwo = $(".p-shape-2");
+        var heroImgThree = $(".p-shape-3");
+        var heroImgFour = $(".p-shape-4");
+        hoverLayer.mousemove(function(e) {
+            var valueX = (e.pageX * -1) / 50;
+            var valueY = (e.pageY * -1) / 60;
+            heroImgOne.css({
+                transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
+            });
+        });
+        hoverLayer.mousemove(function(e) {
+            var valueX = (e.pageX * -1) / 30;
+            var valueY = (e.pageY * -1) / 40;
+            heroImgTwo.css({
+                transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
+            });
+        });
+        hoverLayer.mousemove(function(e) {
+            var valueX = (e.pageX * -1) / 20;
+            var valueY = (e.pageY * -1) / 30;
+            heroImgThree.css({
+                transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
+            });
+        });
+        hoverLayer.mousemove(function(e) {
+            var valueX = (e.pageX * -1) / 40;
+            var valueY = (e.pageY * -1) / 50;
+            heroImgFour.css({
+                transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
+            });
+        });
+
     });
 
     jQuery(window).on('load', function() {
