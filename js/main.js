@@ -3,7 +3,7 @@
     "use strict"
     jQuery(document).ready(function() {
 
-        // mobile-menu
+        // Mobile-menu
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
             meanScreenWidth: "991.99"
@@ -57,6 +57,20 @@
             heroImgFour.css({
                 transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
             });
+        });
+
+        // Countdown 
+        $('.countdown').downCount({
+            date: '06/28/2021 12:00:00',
+            offset: +6
+        }, function() {
+            alert('Countdown done!');
+        });
+
+        // Food counter
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
         });
 
     });
