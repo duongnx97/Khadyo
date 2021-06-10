@@ -93,7 +93,7 @@
             ]
         });
 
-        //   slider-gallery
+        //   Slider-gallery
         $('.slider-gallery-active').slick({
             dots: false,
             arrows: false,
