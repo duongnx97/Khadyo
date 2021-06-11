@@ -3,7 +3,7 @@
     "use strict"
     jQuery(document).ready(function() {
 
-        // mobile-menu
+        // Mobile-menu
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
             meanScreenWidth: "991.99"
@@ -57,6 +57,89 @@
             heroImgFour.css({
                 transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
             });
+        });
+
+        // Testimonial 
+        $('.testimonial-active').slick({
+            dots: true,
+            infinite: false,
+            speed: 1000,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        //   Slider-gallery
+        $('.slider-gallery-active').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 4,
+            centerMode: true,
+            variableWidth: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+
+                    }
+                }
+            ]
+        });
+
+        // Countdown 
+        $('.countdown').downCount({
+            date: '06/28/2021 12:00:00',
+            offset: +6
+        }, function() {
+            alert('Countdown done!');
+        });
+
+        // Food counter
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
         });
 
     });
