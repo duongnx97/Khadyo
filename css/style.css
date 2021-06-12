@@ -3016,6 +3016,9 @@ div#small-dialog iframe {
     color: #cc3333;
 }
 
+
+/* Responsive delivery area */
+
 @media (max-width: 767.98px) {
     .delivery-area .del-shapes {
         display: none;
@@ -3161,10 +3164,10 @@ div#small-dialog iframe {
 
 .blog-area .single-blog .blog-meta a {
     color: #2a435d;
+    font-size: 15px;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    font-weight: 500;
 }
 
 .blog-area .single-blog .blog-meta a:hover {
@@ -3173,6 +3176,7 @@ div#small-dialog iframe {
 
 .blog-area .single-blog h4 a {
     color: #2a435d;
+    font-size: 27px;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -3210,6 +3214,184 @@ ul.slick-dots li.slick-active button {
     -ms-transform: scale(2.2);
     transform: scale(2.2);
     background: #cc3333;
+}
+
+
+/* Footer Section */
+
+footer {
+    background: #000000;
+    overflow: hidden;
+    position: relative;
+}
+
+footer .fo-shapes img {
+    width: inherit;
+}
+
+footer .fo-shapes .fs-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .fo-shapes .fs-2 {
+    position: absolute;
+    right: 3%;
+    -webkit-transform: rotate(226deg);
+    -ms-transform: rotate(226deg);
+    transform: rotate(226deg);
+}
+
+footer .fo-shapes .fs-3 {
+    position: absolute;
+    right: 11%;
+    bottom: 12%;
+}
+
+footer .fo-shapes .fs-4 {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+}
+
+footer .fo-shapes .fs-5 {
+    position: absolute;
+    top: 44%;
+    right: 13%;
+}
+
+footer .fo-shapes .fs-6 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+footer .fo-shapes .fs-7 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer hr {
+    border: 1px dotted #ffffff;
+}
+
+footer .footer-top .f-logo {
+    width: 150px;
+}
+
+footer .footer-top .f-logo img {
+    width: 100%;
+}
+
+footer .footer-top .f-title h4 {
+    color: #ffffff;
+}
+
+footer .footer-top .f-title h4 span {
+    color: #ff9933;
+}
+
+footer .footer-bottom .widget h6 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+footer .footer-bottom .widget p {
+    color: #ffffff;
+}
+
+footer .footer-bottom .widget p span {
+    text-transform: capitalize;
+}
+
+footer .footer-bottom .widget a {
+    color: #ff9933;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+footer .footer-bottom .widget a:hover {
+    color: #ffffff;
+}
+
+footer .footer-bottom .widget .newsletter {
+    margin-bottom: 20px;
+}
+
+footer .footer-bottom .widget .newsletter input {
+    width: 200px;
+    background: transparent;
+    border: 1px solid #e6e6e6;
+    color: #ffffff;
+    padding: 10px;
+    background: #000000;
+}
+
+footer .footer-bottom .widget .newsletter button {
+    background: #cc3333;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    margin-left: -11px;
+}
+
+footer .copyright-area p {
+    color: #ffffff;
+}
+
+footer .copyright-area p a {
+    color: #ff9933;
+}
+
+
+/* Responsive Footer section */
+
+@media (max-width: 767.98px) {
+    footer .fo-shapes {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer .fo-shapes {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    footer .fo-shapes {
+        display: none;
+    }
+    footer .fo-shapes .fs-1 {
+        width: 85px;
+    }
+    footer .fo-shapes .fs-4 {
+        display: none;
+    }
+    footer .footer-top a.btn {
+        padding: 11px 14px;
+    }
+    footer .footer-bottom .widget .newsletter input {
+        width: 75%;
+    }
+    footer .footer-bottom .widget .newsletter button {
+        margin-top: 10px;
+        margin-left: -4px;
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    footer .fo-shapes .fs-1 {
+        width: 85px;
+    }
+    footer .fo-shapes .fs-4 {
+        display: none;
+    }
 }
 
 
