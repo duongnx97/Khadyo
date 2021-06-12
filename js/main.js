@@ -128,6 +128,40 @@
             ]
         });
 
+        // Index-blog-slider-active
+        $('.blog-slider-active').slick({
+            dots: true,
+            infinite: false,
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
         // Countdown 
         $('.countdown').downCount({
             date: '06/28/2021 12:00:00',
