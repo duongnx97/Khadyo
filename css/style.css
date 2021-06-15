@@ -3217,6 +3217,138 @@ ul.slick-dots li.slick-active button {
 }
 
 
+/* Breadcrumb Section */
+
+.breadcrumb-area {
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/bg/breadcrumb.png") !important;
+}
+
+.breadcrumb-area nav {
+    z-index: 0;
+}
+
+.breadcrumb-area .bread-shapes img {
+    width: inherit;
+}
+
+.breadcrumb-area .bread-shapes .b-shape-1 {
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    -webkit-transform: rotate(-93deg);
+    -ms-transform: rotate(-93deg);
+    transform: rotate(-93deg);
+    width: 75px;
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb-area .bread-shapes .b-shape-1 {
+        display: none;
+    }
+}
+
+.breadcrumb-area .bread-shapes .b-shape-2 {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: rotate(177deg);
+    -ms-transform: rotate(177deg);
+    transform: rotate(177deg);
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb-area .bread-shapes .b-shape-2 {
+        display: none;
+    }
+}
+
+.breadcrumb-area .bread-shapes .b-shape-3 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .breadcrumb-area .bread-shapes .b-shape-3 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .breadcrumb-area .bread-shapes .b-shape-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb-area .bread-shapes .b-shape-3 {
+        display: none;
+    }
+}
+
+.breadcrumb-area .bread-shapes .b-shape-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.breadcrumb-area .bread-shapes .b-shape-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.breadcrumb-area .bread-shapes .b-shape-6 {
+    position: absolute;
+    top: 65%;
+    right: 22%;
+    -webkit-transform: rotate(125deg);
+    -ms-transform: rotate(125deg);
+    transform: rotate(125deg);
+    width: 75px;
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb-area .bread-shapes .b-shape-6 {
+        display: none;
+    }
+}
+
+.breadcrumb-area h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.breadcrumb-area .breadcrumb {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item a {
+    color: #ffffff;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item a:hover {
+    color: #cc3333;
+}
+
+
 /* Footer Section */
 
 footer {
