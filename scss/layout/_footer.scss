@@ -1,0 +1,163 @@
+/* Footer Section */
+footer {
+    background: $cl-black;
+    overflow: hidden;
+    position: relative;
+
+    .fo-shapes {
+        @include responsive(1199) {
+            display: none;
+        }
+        @include responsive(991) {
+            display: none;
+        }
+        @include responsive(767) {
+            display: none;
+        }
+        
+        img {
+            width: inherit;
+        }
+
+        .fs-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include responsive(1439) {
+                width: 85px;
+            }
+            @include responsive(1199) {
+                width: 85px;
+            }
+        }
+
+        .fs-2 {
+            @include absoluteTopRight(unset, 3%);
+            transform: rotate(226deg);
+        }
+
+        .fs-3 {
+            @include absoluteBottomRight(12%, 11%);
+        }
+
+        .fs-4 {
+            @include absoluteTopLeft(38%, 5%);
+            @include responsive(1439) {
+                display: none;
+            }
+            @include responsive(1199) {
+                display: none;
+            }
+        }
+
+        .fs-5 {
+            @include absoluteTopRight(44%, 13%);
+        }
+
+        .fs-6 {
+            @include absoluteBottomRight;
+        }
+
+        .fs-7 {
+            @extend .fs-1;
+        }
+    }
+
+    hr {
+        border: 1px dotted $cl-white;
+    }
+
+    .footer-top {
+        .f-logo {
+            width: 150px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .f-title {
+            h4 {
+                color: $cl-white;
+
+                span {
+                    color: $cl-orange;
+                }
+            }
+        }
+
+        a {
+            &.btn {
+                @include responsive(1199) {
+                    padding: 11px 14px;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        .widget {
+            h6 {
+                color: $cl-white;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $cl-white;
+
+                span {
+                    text-transform: capitalize;
+                }
+            }
+
+            a {
+                color: $cl-orange;
+                text-transform: capitalize;
+                transition: .3s;
+
+                &:hover {
+                    color: $cl-white;
+                }
+            }
+
+            .newsletter {
+                margin-bottom: 20px;
+
+                input {
+                    width: 200px;
+                    background: transparent;
+                    border: 1px solid $cl-white1;
+                    color: $cl-white;
+                    padding: 10px;
+                    background: $cl-black;
+                    @include responsive(1199) {
+                        width: 75%;
+                    }
+                }
+
+                button {
+                    background: $cl-red;
+                    color: $cl-white;
+                    border: 1px solid $cl-white;
+                    padding: 10px 20px;
+                    margin-left: -11px;
+                    @include responsive(1199) {
+                        margin-top: 10px;
+                        margin-left: -4px;
+                        width: 25%; 
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-area {
+        p {
+            color: $cl-white;
+
+            a {
+                color: $cl-orange;
+            }
+        }
+    }
+}

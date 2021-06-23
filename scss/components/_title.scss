@@ -1,0 +1,16 @@
+/* Common title area */
+
+.common-title-area {
+    h2 {
+        font-weight: 900;
+
+        span {
+            color: $cl-red;
+        }
+    }
+
+    h3 {
+        font-family: $font-cav;
+        color: $cl-red;
+    }
+}

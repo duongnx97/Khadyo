@@ -1,0 +1,348 @@
+/* Banner area */
+
+.banner-area {
+    position: relative;
+    background-color: #131313;
+    overflow: hidden;
+
+    .banner-content {
+        padding-top: 110px;
+        padding-bottom: 80px;
+        @include responsive (1199) {
+            padding-top: 40px;
+        }
+        @include responsive (991) {
+            padding-top: 40px;
+        }
+        @include responsive (767) {
+            padding-top: 40px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: $cl-white;
+            margin-bottom: 40px;
+            @include responsive (1199) {
+                font-size: 42px;
+                margin-bottom: 20px;
+            }
+            @include responsive (991) {
+                font-size: 42px;
+                margin-bottom: 20px;
+            }
+            @include responsive (767) {
+                font-size: 42px;
+                margin-bottom: 20px;
+            }
+
+            span {
+                color: $cl-orange;
+            }
+        }
+
+        .price {
+            font-size: 24px;
+            color: $cl-white;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            @include responsive (1439) {
+                margin-bottom: 20px;
+            }
+            @include responsive (1199) {
+                margin-bottom: 20px;
+            }
+            @include responsive (991) {
+                margin-bottom: 20px;
+            }
+            @include responsive (767) {
+                margin-bottom: 20px;
+            }
+
+            span {
+                color: $cl-orange;
+                font-size: 36px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .buyone-shape {
+        display: flex;
+        margin-bottom: 40px;
+        @include responsive (1439) {
+            margin-bottom: 20px;
+        }
+        @include responsive (1199) {
+            margin-bottom: 20px;
+        }
+        @include responsive (991) {
+            margin-bottom: 20px;
+        }
+        @include responsive (767) {
+            margin-bottom: 20px;
+        }
+
+        .banner-tag {
+            border: 1px dotted $cl-white;
+            border-right: none;
+            display: flex;
+            padding: 10px;
+            padding-right: 40px;
+            align-items: center;
+            border-top-left-radius: 14px;
+            border-bottom-left-radius: 14px;
+            @include responsive (11990) {
+                padding-right: 12px;
+            }
+            @include responsive (575) {
+                padding-right: 10px;
+            }
+            @include responsive (359) {
+                padding-right: 10px;
+            }
+
+            h5 {
+                color: $cl-white;
+                text-transform: capitalize;
+                font-weight: 600;
+                @include responsive (1199) {
+                    font-size: 20px;
+                }
+                @include responsive (991) {
+                    font-size: 20px;
+                }
+                @include responsive (767) {
+                    font-size: 20px;
+                }
+                @include responsive (359) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .banner-badge {
+            font-size: 30px;
+            font-family: $font-pop;
+            font-weight: 700;
+            background: $cl-red;
+            color: $cl-white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            position: relative;
+            @include responsive (1199) {
+                font-size: 24px;
+            }
+            @include responsive (991) {
+                font-size: 24px;
+            }
+            @include responsive (767) {
+                font-size: 24px;
+            }
+            @include responsive (575) {
+                padding: 10px 6px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 22px;
+                right: -39px;
+                height: 14px;
+                top: -1px;
+                border-style: solid;
+                border-width: 38px 0 28px 40px;
+                border-color: transparent transparent transparent $cl-red;
+                @include responsive (1199) {
+                    border-width: 29px 0 28px 40px;
+                }
+                @include responsive (991) {
+                    border-width: 29px 0 28px 40px;
+                }
+                @include responsive (767) {
+                    border-width: 29px 0 28px 40px;
+                }
+            }
+        }
+    }
+
+    .order-box {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+        .order-img img {
+            width: inherit;
+        }
+
+        .order-content {
+            margin-left: 10px;
+
+            p {
+                color: $cl-white;
+                margin-bottom: 0;
+                text-transform: capitalize;
+            }
+
+            span {
+                color: $cl-orange;
+                font-family: $font-pop;
+                font-weight: 700;
+                font-size: 24px;
+                @include responsive (1199) {
+                    font-size: 16px;
+                }
+                @include responsive (991) {
+                    font-size: 16px;
+                }
+                @include responsive (767) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .btn {
+            padding: 15px 40px;
+            margin-left: 40px;
+            @include responsive (1199) {
+                margin-left: 20px;
+            }
+            @include responsive (991) {
+                margin-left: 30px;
+            }
+            @include responsive (767) {
+                margin-left: 25px;
+            }
+            @include responsive (575) {
+                margin-top: 20px;
+            }
+            @include responsive (359) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .banner-shapes {
+        @include responsive (767) {
+            display: none;
+        }
+
+        img {
+            width: inherit;
+            @include responsive (1439) {
+                width: 60%;
+            }
+            @include responsive (1199) {
+                width: 60%;
+            }
+            @include responsive (991) {
+                width: 50%;
+            }
+        }
+
+        .b-shape-1 {
+            position: absolute;
+            bottom: 3%;
+            left: 3%;
+        }
+
+        .b-shape-2 {
+            position: absolute;
+            top: 50%;
+            left: 3%;
+        }
+
+        .b-shape-3 {
+            position: absolute;
+            top: 17%;
+            left: 2%;
+            width: 100px;
+            z-index: 0;
+        }
+
+        .b-shape-4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .b-shape-5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .banner-img {
+        position: relative;
+
+        img {
+            margin-left: 76px;
+            width: 100%;
+            margin-top: 5px;
+            @include responsive (1920) {
+                margin-left: 76px;
+                width: inherit;
+            }
+            @include responsive (1599) {
+                margin-left: 76px;
+                width: inherit;
+                margin-top: 5px;
+            }
+            @include responsive (1439) {
+                margin-left: 76px;
+                width: inherit;
+                margin-top: 5px;
+            }
+        }
+
+        .pizza-shapes {
+            img {
+                width: inherit;
+            }
+
+            .p-shape-1 {
+                position: absolute;
+                bottom: -15%;
+                left: -3%;
+                width: 75px;
+            }
+
+            .p-shape-2 {
+                position: absolute;
+                right: -27%;
+                top: 7%;
+                width: 76px;
+            }
+
+            .p-shape-3 {
+                position: absolute;
+                right: -9%;
+                top: -10%;
+            }
+
+            .p-shape-4 {
+                position: absolute;
+                top: 12%;
+                left: -7%;
+                width: 170px;
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 20%;
+        width: 450px;
+        height: 100%;
+        background-color: #271C0A;
+        @include responsive (991) {
+            opacity: 0;
+        }
+        @include responsive (767) {
+            opacity: 0;
+        }
+    }
+}
