@@ -1,0 +1,300 @@
+/* Header top */
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+
+    .header-top {
+        background: #000000;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        z-index: 11;
+
+        .contact-box {
+            @include flexJContent(flex-start);
+            @include responsive (575) {
+                flex-direction: column;
+            }
+            span {
+                margin-right: 30px;
+                @include responsive(767) {
+                    margin-right: 15px;
+                }
+                @include responsive(359) {
+                    margin-right: 0;
+                }
+
+                a {
+                    @include headerBoxa;
+                    @include responsive (359) {
+                        font-size: 13px;
+                    }
+                    &:hover { @include headerBoxaHover; }
+                }
+            }
+        }
+
+        .social-box {
+            @include flexJContent(flex-end);
+            span {
+                margin-left: 35px;
+                font-size: 14px;
+                @include responsive (767) {
+                    margin-left: 20px;
+                }
+
+                a {
+                    @include headerBoxa;
+                    @include responsive (359) {
+                        font-size: 13px;
+                    }
+                    &:hover { @include headerBoxaHover; }
+                }
+            }
+        }
+    }
+}
+
+/* Header bottom - Logo */
+
+header {
+    .header-bottom {
+        .logo {
+            width: 140px;
+            position: relative;
+            z-index: 11;
+            @include responsive (991) {
+                width: 115px;
+            }
+            @include responsive (767) {
+                width: 90px !important;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Header bottom - Nav Menu */
+
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        display: inline-block;
+        position: relative;
+
+        .submenu {
+            width: 220px;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            background: $cl-red;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
+            padding: 20px 10px;
+            border-radius: 5px;
+
+            li {
+                display: block;
+        
+                a {
+                    padding: 5px 15px;
+                    display: block;
+                    text-transform: capitalize;
+                    transition: .3s;
+                    font-size: 14px;
+
+                    &:hover {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        a {
+            padding: 30px 15px;
+            display: block;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $cl-white;
+            @include responsive(1199) {
+                padding: 30px 8px;
+                font-size: 14px;
+            }
+
+            span i {
+                transition: .3s;
+            }
+        }
+
+        &:hover {
+            .submenu {
+                top: 70%;
+                opacity: 1;
+                visibility: visible;
+            }
+    
+            >a {
+                color: $cl-white;
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    @include responsive (575) {
+        top: -6px;
+    }
+
+    .main-menu {
+        li a {
+            @include responsive (1199) {
+                padding: 30px 8px;
+                font-size: 14px;
+            }
+            @include responsive (991) {
+                font-size: 14px;
+            }
+            @include responsive (767) {
+                font-size: 14px;
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        .submenu {
+            position: static;
+            width: 100%;
+            padding: 0;
+            opacity: 1;
+        }
+    }
+
+    .mean-bar {
+        background: transparent;
+
+        .mean-nav {
+            margin-top: 58px;
+            background: $cl-red;
+
+            ul {
+                flex-wrap: wrap;
+
+                li {
+                    a.mean-expand {
+                        width: 25px;
+                        height: 25px;
+                
+                        &:hover {
+                            background: $cl-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mean-container {
+    a.meanmenu-reveal {
+        color: $cl-red;
+        @include responsive (359) {
+            top: 2px;
+        }
+
+        span {
+            background: $cl-red;
+        }
+    }
+}
+
+
+/* Header bottom - Customer area */
+
+header .header-bottom {
+    .customer-area {
+        text-align: right;
+        position: relative;
+        z-index: 11;
+
+        span {
+            margin-right: 20px;
+            display: inline-block;
+            color: $cl-white;
+            border: 1px solid $cl-white;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            transition: .3s;
+            @include responsive (1199) {
+                margin-right: 10px;
+            }
+            @include responsive (767) {
+                padding: 6px;
+            }
+            @include responsive (575) {
+                margin-right: 10px;
+            }
+            @include responsive (359) {
+                margin-right: 5px;
+            }
+
+            a { 
+                color: $cl-white;
+                @include responsive (359) {
+                    font-size: 12px;
+                }
+            }
+
+            i { 
+                display: block;
+            }
+
+            &:hover {
+                background: $cl-red;
+                border: 1px solid transparent;
+            }
+        }
+
+        .btn {
+            margin-left: 30px;
+            @include responsive (1199) {
+                margin-left: 0;
+            }
+            @include responsive (767) {
+                font-size: 15px;
+                padding: 5px 15px;
+            }
+            @include responsive (575) {
+                margin-left: 0;
+            }
+            @include responsive (359) {
+                font-size: 12px;
+                padding: 5px 5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
