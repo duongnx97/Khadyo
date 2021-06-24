@@ -733,8 +733,12 @@ footer {
       width: inherit; }
     .about-area .about-left .about-l-shapes .als-1 {
       position: absolute;
-      bottom: 0%;
-      right: 1%; }
+      bottom: -5%;
+      right: -2%; }
+    .about-area .about-left .about-l-shapes .als-2 {
+      position: absolute;
+      top: 0;
+      left: 100px; }
     .about-area .about-left .gallery {
       transition: .3s; }
       .about-area .about-left .gallery:hover {
@@ -1876,6 +1880,7 @@ ul.slick-dots {
     background-color: #2a435d; }
 
 /* About Page */
+/* Foods counter */
 .foods-counter {
   margin-top: -64px; }
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1940,6 +1945,112 @@ ul.slick-dots {
         content: '+'; }
     .foods-counter .single-food.orange {
       background-color: #ff9933; }
+
+/* About area 2 */
+.about-area2 .about-right .history-tab {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 21, 100, 0.1); }
+  .about-area2 .about-right .history-tab p {
+    margin-bottom: 30px; }
+  .about-area2 .about-right .history-tab .nav {
+    justify-content: space-between;
+    background: #e6e6e6;
+    margin-top: 28px;
+    transition: .5s; }
+    .about-area2 .about-right .history-tab .nav .nav-link {
+      color: #2a435d;
+      font-family: "Poppins", sans-serif;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding: 13px 45px;
+      border-radius: 0;
+      transition: .5s; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .about-area2 .about-right .history-tab .nav .nav-link {
+          padding: 13px 32px; } }
+      @media (max-width: 575.98px) {
+        .about-area2 .about-right .history-tab .nav .nav-link {
+          padding: 13px 14px; } }
+      .about-area2 .about-right .history-tab .nav .nav-link.active {
+        transition: .5s;
+        color: #ffffff;
+        background: #cc3333; }
+  .about-area2 .about-right .history-tab .his-content {
+    padding: 33px; }
+    .about-area2 .about-right .history-tab .his-content .sig-wrapper {
+      position: relative; }
+      .about-area2 .about-right .history-tab .his-content .sig-wrapper img {
+        width: inherit; }
+      .about-area2 .about-right .history-tab .his-content .sig-wrapper .sig-img::after {
+        content: '';
+        background: #cc3333;
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        top: 44%;
+        left: -6%; }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .about-area2 .about-right .history-tab .his-content .sig-wrapper .sig-img::after {
+            width: 30px; } }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .about-area2 .about-right .history-tab .his-content .sig-wrapper .sig-img::after {
+            left: 0%; } }
+        @media (max-width: 767.98px) {
+          .about-area2 .about-right .history-tab .his-content .sig-wrapper .sig-img::after {
+            display: none; } }
+      .about-area2 .about-right .history-tab .his-content .sig-wrapper .sig-img span {
+        text-transform: capitalize;
+        margin-left: 10px; }
+      .about-area2 .about-right .history-tab .his-content .sig-wrapper .btn, .about-area2 .about-right .history-tab .his-content .sig-wrapper .btn2 {
+        padding: 10px 20px;
+        border-radius: 5px; }
+        @media (max-width: 575.98px) {
+          .about-area2 .about-right .history-tab .his-content .sig-wrapper .btn, .about-area2 .about-right .history-tab .his-content .sig-wrapper .btn2 {
+            margin-top: 20px; } }
+        .about-area2 .about-right .history-tab .his-content .sig-wrapper .btn:hover, .about-area2 .about-right .history-tab .his-content .sig-wrapper .btn2:hover {
+          background: transparent;
+          color: #cc3333;
+          border: 1px solid #cc3333; }
+
+/* Delicious area */
+.delicious-area {
+  background-image: url("../images/bg/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden; }
+  .delicious-area .deli-shapes .ds-1 {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .delicious-area .deli-shapes .ds-2 {
+    position: absolute;
+    top: 14%;
+    right: 6%;
+    width: 75px; }
+  .delicious-area .delicious-left h2 {
+    color: #ffffff;
+    padding-bottom: 30px; }
+    .delicious-area .delicious-left h2 span {
+      color: #ff9933; }
+  .delicious-area .delicious-left .play-btn1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-right: 10px;
+    background: #cc3333;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    transition: .3s; }
+  .delicious-area .delicious-left .intro {
+    color: #ff9933;
+    text-transform: capitalize;
+    transition: .3s; }
+    .delicious-area .delicious-left .intro:hover {
+      color: #cc3333; }
 
 /* Pop overlay */
 .pop-overlay {
@@ -2448,6 +2559,9 @@ button {
 
 .padding-bottom-50 {
   padding-bottom: 50px; }
+
+.margin-top-50 {
+  margin-top: 50px; }
 
 .margin-bottom-50 {
   margin-bottom: 50px; }

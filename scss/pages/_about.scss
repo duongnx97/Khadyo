@@ -1,81 +1,240 @@
 /* About Page */
+
+/* Foods counter */
 .foods-counter {
-    margin-top: -64px;
-    @include responsive(991) {
-        margin-top: 0;
-        padding-top: 120px;
-    }
-    @include responsive(767) {
-        margin-top: 0;
-        padding-top: 120px;
+  margin-top: -64px;
+
+  @include responsive(991) {
+    margin-top : 0;
+    padding-top: 120px;
+  }
+
+  @include responsive(767) {
+    margin-top : 0;
+    padding-top: 120px;
+  }
+
+  .single-food {
+    border       : 1px solid transparent;
+    padding      : 10px 40px;
+    border-radius: 5px;
+    position     : relative;
+    background   : $cl-red;
+    margin-bottom: 20px;
+
+    &::after {
+      @include absoluteTopLeft;
+      content   : '';
+      width     : 100%;
+      height    : 100%;
+      background: $cl-red;
+      opacity   : 0;
+      visibility: hidden;
+      z-index   : -1;
     }
 
-    .single-food {
-        border: 1px solid transparent;
-        padding: 10px 40px;
-        border-radius: 5px;
-        position: relative;
-        background: $cl-red;
-        margin-bottom: 20px;
+    span {
+      color: $cl-white;
+    }
 
-        &::after {
-            @include absoluteTopLeft;
-            content: '';
-            width: 100%;
-            height: 100%;
+    p {
+      color         : $cl-white;
+      text-transform: capitalize;
+    }
+
+    img {
+      width   : 100px;
+      padding : 10px;
+      height  : 90px;
+      margin  : 0 auto;
+      position: relative;
+      z-index : 2;
+    }
+
+    .g-s-4 {
+      @include absoluteBottomRight(0, -26px);
+      opacity   : 1;
+      visibility: visible;
+      z-index   : 1;
+
+      img {
+        width: 72%;
+      }
+    }
+
+    .g-s-5 {
+      @extend .g-s-4;
+      @include absoluteBottomRight(unset, unset);
+      @include absoluteTopLeft;
+    }
+
+    .items {
+      font-family: $font-pop;
+      font-weight: 700;
+      font-size  : 30px;
+
+      &::after {
+        content: '+';
+      }
+    }
+
+    &.orange {
+      background-color: $cl-orange;
+    }
+  }
+}
+
+/* About area 2 */
+.about-area2 {
+  .about-right {
+    .history-tab {
+      background-color: $cl-white;
+      box-shadow      : 0px 0px 10px 0px rgba(0, 21, 100, 0.1);
+
+      p {
+        margin-bottom: 30px;
+      }
+
+      .nav {
+        justify-content: space-between;
+        background     : $cl-white1;
+        margin-top     : 28px;
+        transition     : .5s;
+
+        .nav-link {
+          color         : $cl-blue;
+          font-family   : $font-pop;
+          text-transform: capitalize;
+          font-weight   : 600;
+          padding       : 13px 45px;
+          border-radius : 0;
+          transition    : .5s;
+
+          @include responsive(1199) {
+            padding: 13px 32px;
+          }
+
+          @include responsive(575) {
+            padding: 13px 14px;
+          }
+
+          &.active {
+            transition: .5s;
+            color     : $cl-white;
             background: $cl-red;
-            opacity: 0;
-            visibility: hidden;
-            z-index: -1;
+          }
         }
+      }
 
-        span {
-            color: $cl-white;
-        }
+      .his-content {
+        padding: 33px;
 
-        p {
-            color: $cl-white;
-            text-transform: capitalize;
-        }
+        .sig-wrapper {
+          position: relative;
 
-        img {
-            width: 100px;
-            padding: 10px;
-            height: 90px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
+          img {
+            width: inherit;
+          }
 
-        .g-s-4 {
-            @include absoluteBottomRight(0, -26px);
-            opacity: 1;
-            visibility: visible;
-            z-index: 1;
-
-            img {
-                width: 72%;
-            }
-        }
-
-        .g-s-5 {
-            @extend .g-s-4;
-            @include absoluteBottomRight(unset, unset);
-            @include absoluteTopLeft;
-        }
-
-        .items {
-            font-family: $font-pop;
-            font-weight: 700;
-            font-size: 30px;
+          .sig-img {
 
             &::after {
-                content: '+';
-            }
-        }
+              content   : '';
+              background: $cl-red;
+              width     : 50px;
+              height    : 2px;
+              @include absoluteTopLeft(44%, -6%);
 
-        &.orange {
-            background-color: $cl-orange;
+              @include responsive(1199) {
+                width: 30px;
+              }
+
+              @include responsive(991) {
+                left: 0%;
+              }
+
+              @include responsive(767) {
+                display: none;
+              }
+            }
+
+            span {
+              text-transform: capitalize;
+              margin-left   : 10px;
+            }
+          }
+
+          .btn {
+            padding      : 10px 20px;
+            border-radius: 5px;
+
+            @include responsive(575) {
+              margin-top: 20px;
+            }
+
+            &:hover {
+              background: transparent;
+              color     : $cl-red;
+              border    : 1px solid $cl-red;
+            }
+          }
         }
+      }
     }
+  }
+}
+
+/* Delicious area */
+.delicious-area {
+  background-image     : url("../images/bg/bg1.jpg");
+  background-size      : cover;
+  background-repeat    : no-repeat;
+  background-attachment: fixed;
+  position             : relative;
+  overflow             : hidden;
+
+  .deli-shapes {
+    .ds-1 {
+      @include absoluteTopLeft;
+    }
+
+    .ds-2 {
+      @include absoluteTopRight(14%, 6%);
+      width: 75px;
+    }
+  }
+
+  .delicious-left {
+    h2 {
+      color         : $cl-white;
+      padding-bottom: 30px;
+
+      span {
+        color: $cl-orange;
+      }
+    }
+
+    .play-btn1 {
+      width        : 50px;
+      height       : 50px;
+      border-radius: 50%;
+      color        : $cl-white;
+      margin-right : 10px;
+      background   : $cl-red;
+      text-align   : center;
+      line-height  : 50px;
+      display      : inline-block;
+      transition   : .3s;
+    }
+
+    .intro {
+      color         : $cl-orange;
+      text-transform: capitalize;
+      transition    : .3s;
+
+      &:hover {
+        color: $cl-red;
+      }
+    }
+  }
 }
