@@ -2100,6 +2100,30 @@ ul.slick-dots {
         .team-area .single-team .t-social-b .t-social a:hover {
           color: #cc3333; }
 
+/* Menu Page */
+.menus-area .menus-wrapper .single-menus {
+  background: #ffffff;
+  box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+  padding: 30px 15px;
+  transition: .3s; }
+  .menus-area .menus-wrapper .single-menus:hover {
+    margin-top: -15px; }
+  .menus-area .menus-wrapper .single-menus h6 {
+    margin-bottom: 20px; }
+  .menus-area .menus-wrapper .single-menus img {
+    width: inherit;
+    margin: 0;
+    margin-bottom: 20px; }
+  .menus-area .menus-wrapper .single-menus p {
+    color: #2a435d;
+    margin-bottom: 20px; }
+  .menus-area .menus-wrapper .single-menus a {
+    color: #cc3333;
+    display: block;
+    transition: .3s; }
+    .menus-area .menus-wrapper .single-menus a:hover {
+      color: #2a435d; }
+
 /* Pop overlay */
 .pop-overlay {
   position: fixed;

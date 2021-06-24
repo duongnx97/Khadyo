@@ -1,0 +1,40 @@
+/* Menu Page */
+.menus-area {
+    .menus-wrapper {
+        .single-menus {
+            background: $cl-white;
+            box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+            padding   : 30px 15px;
+            transition: .3s;
+
+            &:hover {
+                margin-top: -15px;
+            }
+
+            h6 {
+                margin-bottom: 20px;
+            }
+
+            img {
+                width        : inherit;
+                margin       : 0;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color        : $cl-blue;
+                margin-bottom: 20px;
+            }
+
+            a {
+                color     : $cl-red;
+                display   : block;
+                transition: .3s;
+
+                &:hover {
+                    color: $cl-blue;
+                }
+            }
+        }
+    }
+}
