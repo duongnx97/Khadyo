@@ -1,5 +1,4 @@
 /* About Page */
-
 /* Foods counter */
 .foods-counter {
   margin-top: -64px;
@@ -234,6 +233,81 @@
 
       &:hover {
         color: $cl-red;
+      }
+    }
+  }
+}
+
+/* Team area */
+.team-area {
+  background: #FFF8EE;
+  position  : relative;
+  overflow  : hidden;
+
+  .team-area-shapes {
+    img {
+      width: 130px;
+    }
+
+    .ts-1 {
+      @include absoluteTopLeft;
+    }
+
+    .ts-2 {
+      @include absoluteBottomRight(-3%);
+    }
+  }
+
+  .single-team {
+    border       : 1px solid $cl-white1;
+    padding      : 25px 30px;
+    transition   : .3s;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-left  : 30px;
+
+    &:hover {
+      background-color: $cl-white;
+      box-shadow      : 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+      border          : 1px solid transparent;
+    }
+
+    .s-t-img {
+      width        : 100px;
+      margin       : 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .t-content {
+      h5 {
+        margin-bottom: 20px;
+        transition   : .3s;
+
+        &:hover {
+          color: $cl-red;
+        }
+      }
+    }
+
+    .t-social-b {
+      .follow {
+        font-family   : $font-pop;
+        font-weight   : 700;
+        color         : $cl-blue;
+        text-transform: capitalize;
+      }
+
+      .t-social {
+        margin-left: 10px;
+
+        a {
+          color     : $cl-blue;
+          transition: .3s;
+
+          &:hover {
+            color: $cl-red;
+          }
+        }
       }
     }
   }

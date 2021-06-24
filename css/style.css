@@ -2052,6 +2052,54 @@ ul.slick-dots {
     .delicious-area .delicious-left .intro:hover {
       color: #cc3333; }
 
+/* Team area */
+.team-area {
+  background: #FFF8EE;
+  position: relative;
+  overflow: hidden; }
+  .team-area .team-area-shapes img {
+    width: 130px; }
+  .team-area .team-area-shapes .ts-1 {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .team-area .team-area-shapes .ts-2 {
+    position: absolute;
+    bottom: -3%;
+    right: -3%; }
+  .team-area .single-team {
+    border: 1px solid #e6e6e6;
+    padding: 25px 30px;
+    transition: .3s;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-left: 30px; }
+    .team-area .single-team:hover {
+      background-color: #ffffff;
+      box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+      border: 1px solid transparent; }
+    .team-area .single-team .s-t-img {
+      width: 100px;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .team-area .single-team .t-content h5 {
+      margin-bottom: 20px;
+      transition: .3s; }
+      .team-area .single-team .t-content h5:hover {
+        color: #cc3333; }
+    .team-area .single-team .t-social-b .follow {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      color: #2a435d;
+      text-transform: capitalize; }
+    .team-area .single-team .t-social-b .t-social {
+      margin-left: 10px; }
+      .team-area .single-team .t-social-b .t-social a {
+        color: #2a435d;
+        transition: .3s; }
+        .team-area .single-team .t-social-b .t-social a:hover {
+          color: #cc3333; }
+
 /* Pop overlay */
 .pop-overlay {
   position: fixed;
@@ -2271,6 +2319,9 @@ ul.slick-dots {
 .item-bounce {
   animation: bounce 3s infinite ease-in-out; }
 
+.item-ripple {
+  animation: ripple 3s infinite ease-in-out; }
+
 /* Animations key */
 @keyframes animateOne {
   0% {
@@ -2303,6 +2354,11 @@ ul.slick-dots {
     height: 60px;
     opacity: 0;
     box-shadow: 0 0 0 50px rgba(255, 255, 255, 0); } }
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 51, 51, 0.2), 0 0 0 20px rgba(204, 51, 51, 0.2), 0 0 0 40px rgba(204, 51, 51, 0.2); }
+  100% {
+    box-shadow: 0 0 0 20px rgba(204, 51, 51, 0.2), 0 0 0 40px rgba(204, 51, 51, 0.1), 0 0 0 60px rgba(204, 51, 51, 0); } }
 @keyframes sk-bouncedelay {
   0%,
     80%,
