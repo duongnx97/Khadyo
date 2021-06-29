@@ -1305,7 +1305,6 @@ div#small-dialog iframe {
   .banner-gallery .gallery-img-1::after, .banner-gallery .gallery-img-2::after, .banner-gallery .gallery-img-3::after, .banner-gallery .gallery-img-4::after {
     content: '';
     position: absolute;
-    z-index: 1;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1318,8 +1317,6 @@ div#small-dialog iframe {
   .banner-gallery .gallery-img-1::before, .banner-gallery .gallery-img-2::before, .banner-gallery .gallery-img-3::before, .banner-gallery .gallery-img-4::before {
     content: '';
     position: absolute;
-    z-index: 1;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -1357,7 +1354,216 @@ div#small-dialog iframe {
     display: block;
     text-align: center;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px; }
+    .writeto-us .contact-form-area h3 span {
+      color: #cc3333; }
+  .writeto-us .contact-form-area form textarea, .writeto-us .contact-form-area form input {
+    width: 100%;
+    padding: 20px 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    text-transform: capitalize; }
+  .writeto-us .contact-form-area form input {
+    margin-bottom: 20px; }
+  .writeto-us .contact-form-area form button {
+    margin-top: 30px; }
+
+/* About area */
+.about-area {
+  overflow: hidden;
+  /* About left area */
+  /* About right area */ }
+  .about-area .about-left {
+    margin-bottom: 60px;
+    position: relative; }
+    .about-area .about-left .about-l-shapes img {
+      width: inherit; }
+    .about-area .about-left .about-l-shapes .als-1 {
+      position: absolute;
+      bottom: 0%;
+      right: 1%; }
+    .about-area .about-left .gallery {
+      transition: .3s; }
+      .about-area .about-left .gallery:hover {
+        transform: scale(1.1); }
+    .about-area .about-left .about-gallery-1, .about-area .about-left .about-gallery-3 {
+      position: relative; }
+      .about-area .about-left .about-gallery-1:hover::after, .about-area .about-left .about-gallery-3:hover::after {
+        transform: scaleY(0);
+        opacity: .5; }
+      .about-area .about-left .about-gallery-1:hover::before, .about-area .about-left .about-gallery-3:hover::before {
+        transform: scaleX(0);
+        opacity: .5; }
+      .about-area .about-left .about-gallery-1::after, .about-area .about-left .about-gallery-3::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background: #ffffff;
+        transform-origin: 80%;
+        transition: all .5s;
+        transform: scaleY(1); }
+      .about-area .about-left .about-gallery-1::before, .about-area .about-left .about-gallery-3::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background: #ffffff;
+        transform-origin: 80%;
+        transition: all .5s;
+        transform: scaleX(1); }
+    .about-area .about-left .about-gallery-2 {
+      position: relative; }
+      .about-area .about-left .about-gallery-2 .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        color: #ffffff;
+        background: #cc3333;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center; }
+        .about-area .about-left .about-gallery-2 .play-btn::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          content: '';
+          width: 30px;
+          height: 30px;
+          border: 3px solid #eee;
+          z-index: -1;
+          box-shadow: 0 0 0 0 #ff9933;
+          animation: ring 2s infinite; }
+    .about-area .about-left .about-gallery-4 {
+      border: 1px solid #e6e6e6;
+      padding: 10px 40px;
+      width: 200px;
+      height: 150px;
+      border-radius: 5px;
+      position: relative;
+      background: #cc3333;
+      color: #ffffff; }
+      .about-area .about-left .about-gallery-4 .mp {
+        position: relative;
+        z-index: 4; }
+      .about-area .about-left .about-gallery-4 p {
+        color: #ffffff;
+        position: relative;
+        z-index: 4;
+        text-transform: capitalize; }
+      .about-area .about-left .about-gallery-4 .g-s-4, .about-area .about-left .about-gallery-4 .menu-area .menu-nav-wrapper .single-menu-nav:hover .g-s-5, .menu-area .menu-nav-wrapper .single-menu-nav:hover .about-area .about-left .about-gallery-4 .g-s-5, .about-area .about-left .about-gallery-4 .foods-counter .single-food .g-s-5, .foods-counter .single-food .about-area .about-left .about-gallery-4 .g-s-5 {
+        position: absolute;
+        bottom: 0;
+        right: -26px;
+        opacity: 1;
+        visibility: visible;
+        width: 100px; }
+        .about-area .about-left .about-gallery-4 .g-s-4 img, .about-area .about-left .about-gallery-4 .menu-area .menu-nav-wrapper .single-menu-nav:hover .g-s-5 img, .menu-area .menu-nav-wrapper .single-menu-nav:hover .about-area .about-left .about-gallery-4 .g-s-5 img, .about-area .about-left .about-gallery-4 .foods-counter .single-food .g-s-5 img, .foods-counter .single-food .about-area .about-left .about-gallery-4 .g-s-5 img {
+          width: 72%; }
+      .about-area .about-left .about-gallery-4 .g-s-5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        width: 50px; }
+        .about-area .about-left .about-gallery-4 .g-s-5 img {
+          width: 72%; }
+      .about-area .about-left .about-gallery-4 .items {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        position: relative;
+        z-index: 11; }
+        .about-area .about-left .about-gallery-4 .items::after {
+          content: '+';
+          position: absolute;
+          top: 0;
+          right: -15; }
+      .about-area .about-left .about-gallery-4:hover::after {
+        visibility: visible;
+        opacity: .9; }
+      .about-area .about-left .about-gallery-4:hover span {
+        color: #ffffff; }
+      .about-area .about-left .about-gallery-4:hover p {
+        color: #ffffff; }
+  .about-area .about-right {
+    position: relative; }
+    .about-area .about-right h2 {
+      font-weight: 900;
+      margin-bottom: 30px; }
+      .about-area .about-right h2 span {
+        color: #cc3333; }
+    .about-area .about-right p {
+      margin-bottom: 20px; }
+    .about-area .about-right .about-r-shapes img {
+      width: inherit; }
+    .about-area .about-right .about-r-shapes .as-1 {
+      position: absolute;
+      top: 30%;
+      right: 16%; }
+    .about-area .about-right .garlic-burger-card {
+      background: #ffffff;
+      box-shadow: 0px 5px 68px 0px rgba(0, 21, 100, 0.1);
+      padding: 35px;
+      display: flex;
+      margin-bottom: 35px; }
+      .about-area .about-right .garlic-burger-card .garlic-burger-img {
+        margin-right: 20px;
+        position: relative; }
+        .about-area .about-right .garlic-burger-card .garlic-burger-img .price-badge {
+          position: absolute;
+          top: -17px;
+          left: 13px; }
+        .about-area .about-right .garlic-burger-card .garlic-burger-img img {
+          width: inherit; }
+
+/* Small dialog */
+div#small-dialog .mfp-container {
+  width: 45%;
+  height: 45%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0; }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    div#small-dialog .mfp-container {
+      width: 60%; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    div#small-dialog .mfp-container {
+      width: 70%; } }
+  @media (max-width: 767.98px) {
+    div#small-dialog .mfp-container {
+      width: 80%;
+      height: 300px; } }
+  @media (max-width: 575.98px) {
+    div#small-dialog .mfp-container {
+      width: 100%; } }
+div#small-dialog .mfp-close {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: #FFF;
+  font-size: 30px;
+  background: transparent; }
+  div#small-dialog .mfp-close::before {
     position: absolute;
     top: 10%;
     left: 55%; }
