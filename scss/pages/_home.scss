@@ -393,7 +393,8 @@ div#small-dialog {
                 }
 
                 .g-s-5 {
-                    @extend .g-s-4;
+                    opacity: 1;
+                    visibility: visible;
                 }
 
                 &::after {
@@ -776,7 +777,7 @@ div#small-dialog {
 
         img {
             @include absoluteBottomRight;
-            width: 60%;
+            width: inherit;
         }
 
         a {
@@ -1223,7 +1224,6 @@ div#small-dialog {
         }
     }
 }
-
 
 /* Slider gallery */
 .slider-gallery-img {
