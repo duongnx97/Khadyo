@@ -1,0 +1,26 @@
+/* 
+    Khadyo CSS main styles
+*/
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/banner';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/menu';
+
+@import 'components/pop-overlay';
+@import 'components/buttons';
+@import 'components/breadcrumb';
+@import 'components/title';
+@import 'components/preloader';
+
+@import 'base/animation';
+@import 'base/reset';
+@import 'base/fonts';

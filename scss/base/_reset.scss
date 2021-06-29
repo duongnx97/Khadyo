@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $cl-blue;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    @include colorvsFontWS(60, 900);
+    text-transform: uppercase;
+}
+
+h2 {
+    @include colorvsFontWS(48, 700);
+}
+
+h3 {
+    @include colorvsFontWS(36, 700);
+}
+
+h4 {
+    @include colorvsFontWS(30, 700);
+}
+
+h5 {
+    @include colorvsFontWS(24, 700);
+}
+
+h6 {
+    @include colorvsFontWS(18, 700);
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+p {
+    color: $cl-blue;
+    margin-bottom: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+.slick-slide {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+// Custom
+
+@for $i from 10 through 150 {
+    @if ($i % 5 == 0) {
+        .padding-#{$i} {
+            padding-top: #{$i}px;
+            padding-bottom: #{$i}px;
+        }
+        .padding-top-#{$i} {
+            padding-top: #{$i}px;
+        }
+        .padding-bottom-#{$i} {
+            padding-bottom: #{$i}px;
+        }
+        .margin-top-#{$i} {
+            margin-top: #{$i}px;
+        }
+        .margin-bottom-#{$i} {
+            margin-bottom: #{$i}px;
+        }
+    }
+    @if ($i % 10 == 0) {
+        .margin-right-#{$i} {
+            margin-right: #{$i}px;
+        }
+        .margin-left-#{$i} {
+            margin-left: #{$i}px;
+        }
+        .margin-#{$i} {
+            margin: #{$i}px 0;
+        }
+    }
+}
+@for $i from 150 through 250 {
+    @if ($i % 5 == 0) {
+        .padding-top-#{$i} {
+            padding-top: #{$i}px;
+        }
+    }
+}
+

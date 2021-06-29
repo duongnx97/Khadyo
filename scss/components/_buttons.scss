@@ -1,0 +1,66 @@
+/* Button styles */
+
+.btn {
+    background: $cl-red;
+    padding: 12px 40px;
+    color: $cl-white;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.btn2 {
+    @extend .btn;
+}
+
+.btn:focus, .btn:focus-visible,
+.btn2:focus, .btn2:focus-visible {
+    outline: none;
+}
+
+.btn:hover {
+    @include btnHover($cl-red);
+}
+
+.btn2:hover {
+    @include btnHover($cl-green);
+}
+
+.scrollup {
+    background: $cl-red;
+    color: $cl-white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    transition: .5s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+
+.scrollup::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid #eee;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 0 $cl-orange;
+    animation: ring 2s infinite;
+}

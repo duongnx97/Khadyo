@@ -1,0 +1,142 @@
+// Responsive
+
+@mixin responsive($point) {
+
+    @if $point == 359 {
+        @media (max-width: 359.98px) {
+            @content;
+        }
+    }
+    @if $point == 575 {
+        @media (max-width: 575.98px) {
+            @content;
+        }
+    }
+    @if $point == 767 {
+        @media (max-width: 767.98px) {
+            @content;
+        }
+    }
+    @if $point == 991 {
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            @content;
+        }
+    }
+    @if $point == 1199 {
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            @content;
+        }
+    }
+    @if $point == 1439 {
+        @media (min-width: 1200px) and (max-width: 1439.98px) {
+            @content;
+        }
+    }
+    @if $point == 1599 {
+        @media (min-width: 1440px) and (max-width: 1599.98px) {
+            @content;
+        }
+    }
+    @if $point == 1920 {
+        @media (min-width: 1600px) and (max-width: 1920px) {
+            @content;
+        }
+    }
+
+}
+
+
+// Custom
+
+@mixin colorvsFontWS ($fSize, $fWeight) {
+    color: $cl-blue;
+    font-size: #{$fSize}px;
+    font-weight: $fWeight;
+}
+
+@mixin btnHover ($color) {
+    background: transparent;
+    border: 1px solid $color;
+    color: $color;
+}
+
+@mixin flexJContent ($jContent) {
+    display: flex;
+    justify-content: $jContent;
+}
+
+@mixin headerBoxa {
+    color: $cl-white;
+    transition: .3s;
+}
+
+@mixin headerBoxaHover {
+    color: $cl-red;
+    transform: scale(1.1);
+}
+
+@mixin aftervsBeforeStyle {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: $cl-white;
+    transform-origin: 80%;
+    transition: all .5s;
+}
+
+@mixin aboutGalleryPlaybnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+@mixin gprice {
+    background: $cl-red;
+    color: $cl-white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-family: $font-pop;
+    position: absolute;
+}
+
+@mixin singleGalleryImg ($tl) {
+    position: absolute;
+    top: $tl;
+    left: $tl;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+@mixin absoluteTopLeft ($top: 0 , $left: $top) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+@mixin absoluteTopRight ($top: 0 , $right: $top) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+@mixin absoluteBottomLeft ($bottom: 0 , $left: $bottom) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin absoluteBottomRight ($bottom: 0 , $right: $bottom) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+}
