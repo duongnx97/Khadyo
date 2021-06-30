@@ -219,111 +219,81 @@
 /* Pizza banner */
 .pizza-banner {
     position: relative;
-}
 
-.pizza-banner .pizza-shapes img {
-    width: inherit;
-}
+    .pizza-shapes {
+        img {
+            width: inherit;
+        }
 
-.pizza-banner .pizza-shapes .ps1 {
-    position: absolute;
-    right   : 0;
-    top     : 109%;
-}
+        .ps1 {
+            @include absoluteTopRight (109%, 0);
+        }
 
-.pizza-banner .pizza-shapes .ps2 {
-    position: absolute;
-    right   : 17%;
-    top     : 75%;
-}
-
-.pizza-banner .gallery-img-1 {
-    overflow: hidden;
-}
-
-.pizza-banner .gallery-img-1 a.btn {
-    margin-top: 9px;
-}
-
-.pizza-banner .gallery-img-1 a.btn:hover {
-    background: transparent;
-    color     : #ffffff;
-    border    : 1px solid #ffffff;
-}
-
-.pizza-banner .gallery-img-1 span.gs {
-    position: absolute;
-    top     : 42%;
-    right   : -4%;
-    z-index : 1;
-}
-
-.pizza-banner .gallery-img-1 span.gs img {
-    width: inherit;
-}
-
-.pizza-banner .gallery-img-01 {
-    background: #cc3333;
-    position  : relative;
-    overflow  : hidden;
-}
-
-.pizza-banner .gallery-img-01 img {
-    width  : inherit;
-    bottom : 22%;
-    z-index: 2;
-}
-
-@media (max-width: 575.98px) {
-    .pizza-banner .gallery-img-01 img {
-        bottom: 0;
-        width : 50%;
+        .ps2 {
+            @include absoluteTopRight (75%, 17%);
+        }
     }
-}
 
-.pizza-banner .gallery-img-01 .yellow {
-    position: absolute;
-    top     : 81%;
-    right   : -5%;
-    z-index : 1;
-}
+    .gallery-img-1 {
+        background: $cl-red;
+        position  : relative;
+        overflow  : hidden;
 
-@media (max-width: 575.98px) {
-    .pizza-banner .gallery-img-01 .yellow {
-        display: none;
+        img {
+            width  : inherit;
+            bottom : 22%;
+            z-index: 2;
+            @include responsive(575) {
+                bottom: 0;
+                width : 50%;
+            }
+        }
+
+        .yellow {
+            @include absoluteTopRight(81%, -5%);
+            z-index : 1;
+            @include responsive(575) {
+                display: none;
+            }
+        }
+
+        a.btn {
+            background: $cl-white;
+            color     : $cl-red;
+            z-index   : 11;
+            position  : relative;
+            margin-top: 9px;
+
+            &:hover {
+                background: transparent;
+                color     : $cl-white;
+                border    : 1px solid $cl-white;
+            }
+        }
+
+        span.gs {
+            @include absoluteTopRight(42%, -4%);
+            z-index : 1;
+
+            img {
+                width: inherit;
+            }
+        }
+
+        span.gs1 {
+            @include absoluteBottomLeft(21%, -5%);
+
+            img {
+                width: inherit;
+            }
+        }
+
+        span.pbadge {
+            position: absolute;
+            left    : 70%;
+            @include responsive(575) {
+                display: none;
+            }
+        }
     }
-}
-
-.pizza-banner .gallery-img-01 span.pbadge {
-    position: absolute;
-    left    : 70%;
-}
-
-@media (max-width: 575.98px) {
-    .pizza-banner .gallery-img-01 span.pbadge {
-        display: none;
-    }
-}
-
-.pizza-banner .gallery-img-01 span.gs1 {
-    position: absolute;
-    bottom  : -5%;
-    left    : 21%;
-}
-
-.pizza-banner .gallery-img-01 span.gs1 img {
-    width: inherit;
-}
-
-.pizza-banner .gallery-img-01 a.btn {
-    background: #ffffff;
-    color     : #cc3333;
-    z-index   : 11;
-    position  : relative;
-}
-
-.pizza-banner .gallery-img-01 a.btn:hover {
-    background: transparent;
-    color     : #ffffff;
-    border    : 1px solid #ffffff;
 }
