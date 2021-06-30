@@ -1305,6 +1305,7 @@ div#small-dialog iframe {
   .banner-gallery .gallery-img-1::after, .banner-gallery .gallery-img-2::after, .banner-gallery .gallery-img-3::after, .banner-gallery .gallery-img-4::after {
     content: '';
     position: absolute;
+    z-index: 1;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1317,6 +1318,8 @@ div#small-dialog iframe {
   .banner-gallery .gallery-img-1::before, .banner-gallery .gallery-img-2::before, .banner-gallery .gallery-img-3::before, .banner-gallery .gallery-img-4::before {
     content: '';
     position: absolute;
+    z-index: 1;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -1354,216 +1357,7 @@ div#small-dialog iframe {
     display: block;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 40px; }
-    .writeto-us .contact-form-area h3 span {
-      color: #cc3333; }
-  .writeto-us .contact-form-area form textarea, .writeto-us .contact-form-area form input {
-    width: 100%;
-    padding: 20px 40px;
-    border: 1px solid #e1e1e1;
-    border-radius: 5px;
-    text-transform: capitalize; }
-  .writeto-us .contact-form-area form input {
-    margin-bottom: 20px; }
-  .writeto-us .contact-form-area form button {
-    margin-top: 30px; }
-
-/* About area */
-.about-area {
-  overflow: hidden;
-  /* About left area */
-  /* About right area */ }
-  .about-area .about-left {
-    margin-bottom: 60px;
-    position: relative; }
-    .about-area .about-left .about-l-shapes img {
-      width: inherit; }
-    .about-area .about-left .about-l-shapes .als-1 {
-      position: absolute;
-      bottom: 0%;
-      right: 1%; }
-    .about-area .about-left .gallery {
-      transition: .3s; }
-      .about-area .about-left .gallery:hover {
-        transform: scale(1.1); }
-    .about-area .about-left .about-gallery-1, .about-area .about-left .about-gallery-3 {
-      position: relative; }
-      .about-area .about-left .about-gallery-1:hover::after, .about-area .about-left .about-gallery-3:hover::after {
-        transform: scaleY(0);
-        opacity: .5; }
-      .about-area .about-left .about-gallery-1:hover::before, .about-area .about-left .about-gallery-3:hover::before {
-        transform: scaleX(0);
-        opacity: .5; }
-      .about-area .about-left .about-gallery-1::after, .about-area .about-left .about-gallery-3::after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        background: #ffffff;
-        transform-origin: 80%;
-        transition: all .5s;
-        transform: scaleY(1); }
-      .about-area .about-left .about-gallery-1::before, .about-area .about-left .about-gallery-3::before {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        background: #ffffff;
-        transform-origin: 80%;
-        transition: all .5s;
-        transform: scaleX(1); }
-    .about-area .about-left .about-gallery-2 {
-      position: relative; }
-      .about-area .about-left .about-gallery-2 .play-btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        color: #ffffff;
-        background: #cc3333;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center; }
-        .about-area .about-left .about-gallery-2 .play-btn::before {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          border-radius: 50%;
-          content: '';
-          width: 30px;
-          height: 30px;
-          border: 3px solid #eee;
-          z-index: -1;
-          box-shadow: 0 0 0 0 #ff9933;
-          animation: ring 2s infinite; }
-    .about-area .about-left .about-gallery-4 {
-      border: 1px solid #e6e6e6;
-      padding: 10px 40px;
-      width: 200px;
-      height: 150px;
-      border-radius: 5px;
-      position: relative;
-      background: #cc3333;
-      color: #ffffff; }
-      .about-area .about-left .about-gallery-4 .mp {
-        position: relative;
-        z-index: 4; }
-      .about-area .about-left .about-gallery-4 p {
-        color: #ffffff;
-        position: relative;
-        z-index: 4;
-        text-transform: capitalize; }
-      .about-area .about-left .about-gallery-4 .g-s-4, .about-area .about-left .about-gallery-4 .menu-area .menu-nav-wrapper .single-menu-nav:hover .g-s-5, .menu-area .menu-nav-wrapper .single-menu-nav:hover .about-area .about-left .about-gallery-4 .g-s-5, .about-area .about-left .about-gallery-4 .foods-counter .single-food .g-s-5, .foods-counter .single-food .about-area .about-left .about-gallery-4 .g-s-5 {
-        position: absolute;
-        bottom: 0;
-        right: -26px;
-        opacity: 1;
-        visibility: visible;
-        width: 100px; }
-        .about-area .about-left .about-gallery-4 .g-s-4 img, .about-area .about-left .about-gallery-4 .menu-area .menu-nav-wrapper .single-menu-nav:hover .g-s-5 img, .menu-area .menu-nav-wrapper .single-menu-nav:hover .about-area .about-left .about-gallery-4 .g-s-5 img, .about-area .about-left .about-gallery-4 .foods-counter .single-food .g-s-5 img, .foods-counter .single-food .about-area .about-left .about-gallery-4 .g-s-5 img {
-          width: 72%; }
-      .about-area .about-left .about-gallery-4 .g-s-5 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 1;
-        visibility: visible;
-        width: 50px; }
-        .about-area .about-left .about-gallery-4 .g-s-5 img {
-          width: 72%; }
-      .about-area .about-left .about-gallery-4 .items {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-size: 30px;
-        position: relative;
-        z-index: 11; }
-        .about-area .about-left .about-gallery-4 .items::after {
-          content: '+';
-          position: absolute;
-          top: 0;
-          right: -15; }
-      .about-area .about-left .about-gallery-4:hover::after {
-        visibility: visible;
-        opacity: .9; }
-      .about-area .about-left .about-gallery-4:hover span {
-        color: #ffffff; }
-      .about-area .about-left .about-gallery-4:hover p {
-        color: #ffffff; }
-  .about-area .about-right {
-    position: relative; }
-    .about-area .about-right h2 {
-      font-weight: 900;
-      margin-bottom: 30px; }
-      .about-area .about-right h2 span {
-        color: #cc3333; }
-    .about-area .about-right p {
-      margin-bottom: 20px; }
-    .about-area .about-right .about-r-shapes img {
-      width: inherit; }
-    .about-area .about-right .about-r-shapes .as-1 {
-      position: absolute;
-      top: 30%;
-      right: 16%; }
-    .about-area .about-right .garlic-burger-card {
-      background: #ffffff;
-      box-shadow: 0px 5px 68px 0px rgba(0, 21, 100, 0.1);
-      padding: 35px;
-      display: flex;
-      margin-bottom: 35px; }
-      .about-area .about-right .garlic-burger-card .garlic-burger-img {
-        margin-right: 20px;
-        position: relative; }
-        .about-area .about-right .garlic-burger-card .garlic-burger-img .price-badge {
-          position: absolute;
-          top: -17px;
-          left: 13px; }
-        .about-area .about-right .garlic-burger-card .garlic-burger-img img {
-          width: inherit; }
-
-/* Small dialog */
-div#small-dialog .mfp-container {
-  width: 45%;
-  height: 45%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0; }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    div#small-dialog .mfp-container {
-      width: 60%; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    div#small-dialog .mfp-container {
-      width: 70%; } }
-  @media (max-width: 767.98px) {
-    div#small-dialog .mfp-container {
-      width: 80%;
-      height: 300px; } }
-  @media (max-width: 575.98px) {
-    div#small-dialog .mfp-container {
-      width: 100%; } }
-div#small-dialog .mfp-close {
-  position: absolute;
-  top: -70px;
-  right: 0;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: #FFF;
-  font-size: 30px;
-  background: transparent; }
-  div#small-dialog .mfp-close::before {
+    font-family: "Poppins", sans-serif;
     position: absolute;
     top: 10%;
     left: 55%; }
@@ -2128,8 +1922,7 @@ ul.slick-dots {
       padding: 10px;
       height: 90px;
       margin: 0 auto;
-      position: relative;
-      z-index: 2; }
+      position: relative; }
     .foods-counter .single-food .g-s-4, .foods-counter .single-food .g-s-5 {
       position: absolute;
       bottom: 0;
@@ -2459,88 +2252,93 @@ ul.slick-dots {
 /* Pizza banner */
 .pizza-banner {
   position: relative; }
+  .pizza-banner .pizza-shapes img {
+    width: inherit; }
+  .pizza-banner .pizza-shapes .ps1 {
+    position: absolute;
+    top: 109%;
+    right: 0; }
+  .pizza-banner .pizza-shapes .ps2 {
+    position: absolute;
+    top: 75%;
+    right: 17%; }
+  .pizza-banner .gallery-img-1, .pizza-banner .banner-gallery .gallery-img-2, .banner-gallery .pizza-banner .gallery-img-2, .pizza-banner .banner-gallery .gallery-img-3, .banner-gallery .pizza-banner .gallery-img-3, .pizza-banner .banner-gallery .gallery-img-4, .banner-gallery .pizza-banner .gallery-img-4 {
+    background: #cc3333;
+    position: relative;
+    overflow: hidden; }
+    .pizza-banner .gallery-img-1 img, .pizza-banner .banner-gallery .gallery-img-2 img, .banner-gallery .pizza-banner .gallery-img-2 img, .pizza-banner .banner-gallery .gallery-img-3 img, .banner-gallery .pizza-banner .gallery-img-3 img, .pizza-banner .banner-gallery .gallery-img-4 img, .banner-gallery .pizza-banner .gallery-img-4 img {
+      width: inherit;
+      bottom: 22%;
+      z-index: 2; }
+      @media (max-width: 575.98px) {
+        .pizza-banner .gallery-img-1 img, .pizza-banner .banner-gallery .gallery-img-2 img, .banner-gallery .pizza-banner .gallery-img-2 img, .pizza-banner .banner-gallery .gallery-img-3 img, .banner-gallery .pizza-banner .gallery-img-3 img, .pizza-banner .banner-gallery .gallery-img-4 img, .banner-gallery .pizza-banner .gallery-img-4 img {
+          bottom: 0;
+          width: 50%; } }
+    .pizza-banner .gallery-img-1 .yellow, .pizza-banner .banner-gallery .gallery-img-2 .yellow, .banner-gallery .pizza-banner .gallery-img-2 .yellow, .pizza-banner .banner-gallery .gallery-img-3 .yellow, .banner-gallery .pizza-banner .gallery-img-3 .yellow, .pizza-banner .banner-gallery .gallery-img-4 .yellow, .banner-gallery .pizza-banner .gallery-img-4 .yellow {
+      position: absolute;
+      top: 81%;
+      right: -5%;
+      z-index: 1; }
+      @media (max-width: 575.98px) {
+        .pizza-banner .gallery-img-1 .yellow, .pizza-banner .banner-gallery .gallery-img-2 .yellow, .banner-gallery .pizza-banner .gallery-img-2 .yellow, .pizza-banner .banner-gallery .gallery-img-3 .yellow, .banner-gallery .pizza-banner .gallery-img-3 .yellow, .pizza-banner .banner-gallery .gallery-img-4 .yellow, .banner-gallery .pizza-banner .gallery-img-4 .yellow {
+          display: none; } }
+    .pizza-banner .gallery-img-1 a.btn, .pizza-banner .banner-gallery .gallery-img-2 a.btn, .banner-gallery .pizza-banner .gallery-img-2 a.btn, .pizza-banner .banner-gallery .gallery-img-3 a.btn, .banner-gallery .pizza-banner .gallery-img-3 a.btn, .pizza-banner .banner-gallery .gallery-img-4 a.btn, .banner-gallery .pizza-banner .gallery-img-4 a.btn, .pizza-banner .gallery-img-1 a.btn2, .pizza-banner .banner-gallery .gallery-img-2 a.btn2, .banner-gallery .pizza-banner .gallery-img-2 a.btn2, .pizza-banner .banner-gallery .gallery-img-3 a.btn2, .banner-gallery .pizza-banner .gallery-img-3 a.btn2, .pizza-banner .banner-gallery .gallery-img-4 a.btn2, .banner-gallery .pizza-banner .gallery-img-4 a.btn2 {
+      background: #ffffff;
+      color: #cc3333;
+      z-index: 11;
+      position: relative;
+      margin-top: 9px; }
+      .pizza-banner .gallery-img-1 a.btn:hover, .pizza-banner .banner-gallery .gallery-img-2 a.btn:hover, .banner-gallery .pizza-banner .gallery-img-2 a.btn:hover, .pizza-banner .banner-gallery .gallery-img-3 a.btn:hover, .banner-gallery .pizza-banner .gallery-img-3 a.btn:hover, .pizza-banner .banner-gallery .gallery-img-4 a.btn:hover, .banner-gallery .pizza-banner .gallery-img-4 a.btn:hover, .pizza-banner .gallery-img-1 a.btn2:hover, .pizza-banner .banner-gallery .gallery-img-2 a.btn2:hover, .banner-gallery .pizza-banner .gallery-img-2 a.btn2:hover, .pizza-banner .banner-gallery .gallery-img-3 a.btn2:hover, .banner-gallery .pizza-banner .gallery-img-3 a.btn2:hover, .pizza-banner .banner-gallery .gallery-img-4 a.btn2:hover, .banner-gallery .pizza-banner .gallery-img-4 a.btn2:hover {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff; }
+    .pizza-banner .gallery-img-1 span.gs, .pizza-banner .banner-gallery .gallery-img-2 span.gs, .banner-gallery .pizza-banner .gallery-img-2 span.gs, .pizza-banner .banner-gallery .gallery-img-3 span.gs, .banner-gallery .pizza-banner .gallery-img-3 span.gs, .pizza-banner .banner-gallery .gallery-img-4 span.gs, .banner-gallery .pizza-banner .gallery-img-4 span.gs {
+      position: absolute;
+      top: 42%;
+      right: -4%;
+      z-index: 1; }
+      .pizza-banner .gallery-img-1 span.gs img, .pizza-banner .banner-gallery .gallery-img-2 span.gs img, .banner-gallery .pizza-banner .gallery-img-2 span.gs img, .pizza-banner .banner-gallery .gallery-img-3 span.gs img, .banner-gallery .pizza-banner .gallery-img-3 span.gs img, .pizza-banner .banner-gallery .gallery-img-4 span.gs img, .banner-gallery .pizza-banner .gallery-img-4 span.gs img {
+        width: inherit; }
+    .pizza-banner .gallery-img-1 span.gs1, .pizza-banner .banner-gallery .gallery-img-2 span.gs1, .banner-gallery .pizza-banner .gallery-img-2 span.gs1, .pizza-banner .banner-gallery .gallery-img-3 span.gs1, .banner-gallery .pizza-banner .gallery-img-3 span.gs1, .pizza-banner .banner-gallery .gallery-img-4 span.gs1, .banner-gallery .pizza-banner .gallery-img-4 span.gs1 {
+      position: absolute;
+      bottom: 21%;
+      left: -5%; }
+      .pizza-banner .gallery-img-1 span.gs1 img, .pizza-banner .banner-gallery .gallery-img-2 span.gs1 img, .banner-gallery .pizza-banner .gallery-img-2 span.gs1 img, .pizza-banner .banner-gallery .gallery-img-3 span.gs1 img, .banner-gallery .pizza-banner .gallery-img-3 span.gs1 img, .pizza-banner .banner-gallery .gallery-img-4 span.gs1 img, .banner-gallery .pizza-banner .gallery-img-4 span.gs1 img {
+        width: inherit; }
+    .pizza-banner .gallery-img-1 span.pbadge, .pizza-banner .banner-gallery .gallery-img-2 span.pbadge, .banner-gallery .pizza-banner .gallery-img-2 span.pbadge, .pizza-banner .banner-gallery .gallery-img-3 span.pbadge, .banner-gallery .pizza-banner .gallery-img-3 span.pbadge, .pizza-banner .banner-gallery .gallery-img-4 span.pbadge, .banner-gallery .pizza-banner .gallery-img-4 span.pbadge {
+      position: absolute;
+      left: 70%; }
+      @media (max-width: 575.98px) {
+        .pizza-banner .gallery-img-1 span.pbadge, .pizza-banner .banner-gallery .gallery-img-2 span.pbadge, .banner-gallery .pizza-banner .gallery-img-2 span.pbadge, .pizza-banner .banner-gallery .gallery-img-3 span.pbadge, .banner-gallery .pizza-banner .gallery-img-3 span.pbadge, .pizza-banner .banner-gallery .gallery-img-4 span.pbadge, .banner-gallery .pizza-banner .gallery-img-4 span.pbadge {
+          display: none; } }
 
-.pizza-banner .pizza-shapes img {
-  width: inherit; }
-
-.pizza-banner .pizza-shapes .ps1 {
-  position: absolute;
-  right: 0;
-  top: 109%; }
-
-.pizza-banner .pizza-shapes .ps2 {
-  position: absolute;
-  right: 17%;
-  top: 75%; }
-
-.pizza-banner .gallery-img-1, .pizza-banner .banner-gallery .gallery-img-2, .banner-gallery .pizza-banner .gallery-img-2, .pizza-banner .banner-gallery .gallery-img-3, .banner-gallery .pizza-banner .gallery-img-3, .pizza-banner .banner-gallery .gallery-img-4, .banner-gallery .pizza-banner .gallery-img-4 {
-  overflow: hidden; }
-
-.pizza-banner .gallery-img-1 a.btn, .pizza-banner .banner-gallery .gallery-img-2 a.btn, .banner-gallery .pizza-banner .gallery-img-2 a.btn, .pizza-banner .banner-gallery .gallery-img-3 a.btn, .banner-gallery .pizza-banner .gallery-img-3 a.btn, .pizza-banner .banner-gallery .gallery-img-4 a.btn, .banner-gallery .pizza-banner .gallery-img-4 a.btn, .pizza-banner .gallery-img-1 a.btn2, .pizza-banner .banner-gallery .gallery-img-2 a.btn2, .banner-gallery .pizza-banner .gallery-img-2 a.btn2, .pizza-banner .banner-gallery .gallery-img-3 a.btn2, .banner-gallery .pizza-banner .gallery-img-3 a.btn2, .pizza-banner .banner-gallery .gallery-img-4 a.btn2, .banner-gallery .pizza-banner .gallery-img-4 a.btn2 {
-  margin-top: 9px; }
-
-.pizza-banner .gallery-img-1 a.btn:hover, .pizza-banner .banner-gallery .gallery-img-2 a.btn:hover, .banner-gallery .pizza-banner .gallery-img-2 a.btn:hover, .pizza-banner .banner-gallery .gallery-img-3 a.btn:hover, .banner-gallery .pizza-banner .gallery-img-3 a.btn:hover, .pizza-banner .banner-gallery .gallery-img-4 a.btn:hover, .banner-gallery .pizza-banner .gallery-img-4 a.btn:hover, .pizza-banner .gallery-img-1 a.btn2:hover, .pizza-banner .banner-gallery .gallery-img-2 a.btn2:hover, .banner-gallery .pizza-banner .gallery-img-2 a.btn2:hover, .pizza-banner .banner-gallery .gallery-img-3 a.btn2:hover, .banner-gallery .pizza-banner .gallery-img-3 a.btn2:hover, .pizza-banner .banner-gallery .gallery-img-4 a.btn2:hover, .banner-gallery .pizza-banner .gallery-img-4 a.btn2:hover {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff; }
-
-.pizza-banner .gallery-img-1 span.gs, .pizza-banner .banner-gallery .gallery-img-2 span.gs, .banner-gallery .pizza-banner .gallery-img-2 span.gs, .pizza-banner .banner-gallery .gallery-img-3 span.gs, .banner-gallery .pizza-banner .gallery-img-3 span.gs, .pizza-banner .banner-gallery .gallery-img-4 span.gs, .banner-gallery .pizza-banner .gallery-img-4 span.gs {
-  position: absolute;
-  top: 42%;
-  right: -4%;
-  z-index: 1; }
-
-.pizza-banner .gallery-img-1 span.gs img, .pizza-banner .banner-gallery .gallery-img-2 span.gs img, .banner-gallery .pizza-banner .gallery-img-2 span.gs img, .pizza-banner .banner-gallery .gallery-img-3 span.gs img, .banner-gallery .pizza-banner .gallery-img-3 span.gs img, .pizza-banner .banner-gallery .gallery-img-4 span.gs img, .banner-gallery .pizza-banner .gallery-img-4 span.gs img {
-  width: inherit; }
-
-.pizza-banner .gallery-img-01 {
-  background: #cc3333;
-  position: relative;
-  overflow: hidden; }
-
-.pizza-banner .gallery-img-01 img {
-  width: inherit;
-  bottom: 22%;
-  z-index: 2; }
-
-@media (max-width: 575.98px) {
-  .pizza-banner .gallery-img-01 img {
-    bottom: 0;
-    width: 50%; } }
-.pizza-banner .gallery-img-01 .yellow {
-  position: absolute;
-  top: 81%;
-  right: -5%;
-  z-index: 1; }
-
-@media (max-width: 575.98px) {
-  .pizza-banner .gallery-img-01 .yellow {
-    display: none; } }
-.pizza-banner .gallery-img-01 span.pbadge {
-  position: absolute;
-  left: 70%; }
-
-@media (max-width: 575.98px) {
-  .pizza-banner .gallery-img-01 span.pbadge {
-    display: none; } }
-.pizza-banner .gallery-img-01 span.gs1 {
-  position: absolute;
-  bottom: -5%;
-  left: 21%; }
-
-.pizza-banner .gallery-img-01 span.gs1 img {
-  width: inherit; }
-
-.pizza-banner .gallery-img-01 a.btn, .pizza-banner .gallery-img-01 a.btn2 {
-  background: #ffffff;
-  color: #cc3333;
-  z-index: 11;
+/* 404 Page */
+.error-area {
   position: relative; }
-
-.pizza-banner .gallery-img-01 a.btn:hover, .pizza-banner .gallery-img-01 a.btn2:hover {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff; }
+  .error-area .btn, .error-area .btn2 {
+    outline: none; }
+    .error-area .btn:focus, .error-area .btn2:focus {
+      outline: none; }
+    .error-area .btn:hover, .error-area .btn2:hover {
+      color: #cc3333;
+      border: 1px solid #cc3333;
+      background: transparent; }
+  @media (max-width: 767.98px) {
+    .error-area .error-shapes {
+      display: none; } }
+  .error-area .error-shapes img {
+    width: inherit; }
+  .error-area .error-shapes .e-s-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .error-area .error-shapes .e-s-2 {
+    position: absolute;
+    top: 20%;
+    right: 0; }
+  .error-area .error-wrapper img {
+    margin: auto;
+    width: 40%; }
 
 /* Pop overlay */
 .pop-overlay {
