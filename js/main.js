@@ -93,7 +93,7 @@
             ]
         });
 
-        //   Slider-gallery
+        // Slider-gallery
         $('.slider-gallery-active').slick({
             dots: false,
             arrows: false,
@@ -128,7 +128,7 @@
             ]
         });
 
-        // Index-blog-slider-active
+        // Blog-slider-active
         $('.blog-slider-active').slick({
             dots: true,
             infinite: false,
@@ -160,6 +160,62 @@
                 }
             }
             ]
+        });
+
+        // Blog-thumbnail-slider-active
+        $('.blog-thumbnail-slider').slick({
+            dots: false,
+            infinite: false,
+            speed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: '<i class="fas fa-reply prev-arrow"></i>',
+            nextArrow: '<i class="fas fa-share next-arrow"></i>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // youtube popup
+        $('.popup-youtube').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+        // blog youtube popup
+        $('.button-video').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
         });
 
         // Team-active
