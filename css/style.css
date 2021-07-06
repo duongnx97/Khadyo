@@ -2845,14 +2845,15 @@ ul.slick-dots {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: rotate(177deg); }
+    transform: rotate(150deg); }
     @media (max-width: 767.98px) {
       .breadcrumb-area .bread-shapes .b-shape-2 {
         display: none; } }
   .breadcrumb-area .bread-shapes .b-shape-3 {
     position: absolute;
-    top: 20%;
-    left: 5%; }
+    top: 55%;
+    left: 15%;
+    width: 85px; }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .breadcrumb-area .bread-shapes .b-shape-3 {
         display: none; } }
