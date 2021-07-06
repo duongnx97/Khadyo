@@ -255,7 +255,7 @@
 
         // Countdown 
         $('.countdown').downCount({
-            date: '07/17/2021 12:00:00',
+            date: '08/17/2021 12:00:00',
             offset: +6
         }, function () {
             alert('Countdown done!');

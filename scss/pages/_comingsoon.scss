@@ -1,0 +1,21 @@
+.comingsoon-area {
+    background: $cl-white;
+    text-align: center;
+
+    .countdown-right {
+        .common-title-area {
+            h2 {
+                color: black;
+            }
+
+            p {
+                color: black;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .count-box {
+        color: black;
+    }
+}

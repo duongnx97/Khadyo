@@ -2752,6 +2752,17 @@ ul.slick-dots {
   background: #ffffff;
   color: #cc3333; }
 
+.comingsoon-area {
+  background: #ffffff;
+  text-align: center; }
+  .comingsoon-area .countdown-right .common-title-area h2 {
+    color: black; }
+  .comingsoon-area .countdown-right .common-title-area p {
+    color: black;
+    text-transform: capitalize; }
+  .comingsoon-area .count-box {
+    color: black; }
+
 /* Button styles */
 .btn, .btn2 {
   background: #cc3333;
