@@ -1,0 +1,108 @@
+/* Contact Page */
+.writeto-us {
+    position: relative;
+
+    .form-shapes {
+        img {
+            width: inherit;
+        }
+
+        .fs1 {
+            @include absoluteTopRight(14%, 7%);
+        }
+
+        .fs2 {
+            @include absoluteBottomLeft(22%, 3%);
+        }
+
+        .fs3 {
+            @include absoluteTopRight(50%, 0);
+        }
+
+        .fs4 {
+            @include absoluteBottomRight(8%, 15%);
+        }
+
+        .fs5 {
+            @include absoluteTopLeft(8%, 12%);
+        }
+    }
+
+    .contact-form-area {
+        input {
+            padding: 10px !important;
+        }
+
+        textarea {
+            padding: 10px !important;
+        }
+    }
+}
+
+.info-area {
+    position: relative;
+
+    img {
+        width: inherit;
+    }
+
+    .info-shapes {
+        .info-s-1 {
+            @include absoluteTopLeft(3%, 0);
+            transform: rotate(-171deg);
+        }
+
+        .info-s-2 {
+            @include absoluteTopRight(3%, 0);
+        }
+    }
+
+    .single-info {
+        border       : 1px solid $cl-white1;
+        padding      : 15px 20px;
+        border-radius: 5px;
+        height       : 100%;
+        background   : $cl-white;
+        margin-bottom: 30px;
+        @include responsive(767) {
+            height: inherit;
+        }
+
+        .info-img {
+            margin-right : 10px;
+            margin-bottom: 20px;
+
+            img {
+                width: inherit;
+            }
+        }
+
+        .info-content {
+            p {
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.map-area {
+    position: relative;
+
+    .map-shapes {
+        @include responsive(767) {
+            display: none;
+        }
+
+        img {
+            width: inherit;
+        }
+
+        .ms-1 {
+            @include absoluteBottomRight;
+        }
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

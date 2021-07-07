@@ -2263,34 +2263,6 @@ ul.slick-dots {
         .pizza-banner .gallery-img-1 span.pbadge, .pizza-banner .banner-gallery .gallery-img-2 span.pbadge, .banner-gallery .pizza-banner .gallery-img-2 span.pbadge, .pizza-banner .banner-gallery .gallery-img-3 span.pbadge, .banner-gallery .pizza-banner .gallery-img-3 span.pbadge, .pizza-banner .banner-gallery .gallery-img-4 span.pbadge, .banner-gallery .pizza-banner .gallery-img-4 span.pbadge {
           display: none; } }
 
-/* 404 Page */
-.error-area {
-  position: relative; }
-  .error-area .btn, .error-area .btn2 {
-    outline: none; }
-    .error-area .btn:focus, .error-area .btn2:focus {
-      outline: none; }
-    .error-area .btn:hover, .error-area .btn2:hover {
-      color: #cc3333;
-      border: 1px solid #cc3333;
-      background: transparent; }
-  @media (max-width: 767.98px) {
-    .error-area .error-shapes {
-      display: none; } }
-  .error-area .error-shapes img {
-    width: inherit; }
-  .error-area .error-shapes .e-s-1 {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-  .error-area .error-shapes .e-s-2 {
-    position: absolute;
-    top: 20%;
-    right: 0; }
-  .error-area .error-wrapper img {
-    margin: auto;
-    width: 40%; }
-
 /* Blog Page */
 .blog-content-section {
   position: relative; }
@@ -2751,6 +2723,109 @@ ul.slick-dots {
 .blog-sidebar .banner-widget-button .btn, .blog-sidebar .banner-widget-button .btn2 {
   background: #ffffff;
   color: #cc3333; }
+
+/* Contact Page */
+.writeto-us {
+  position: relative; }
+  .writeto-us .form-shapes img {
+    width: inherit; }
+  .writeto-us .form-shapes .fs1 {
+    position: absolute;
+    top: 14%;
+    right: 7%; }
+  .writeto-us .form-shapes .fs2 {
+    position: absolute;
+    bottom: 22%;
+    left: 3%; }
+  .writeto-us .form-shapes .fs3 {
+    position: absolute;
+    top: 50%;
+    right: 0; }
+  .writeto-us .form-shapes .fs4 {
+    position: absolute;
+    bottom: 8%;
+    right: 15%; }
+  .writeto-us .form-shapes .fs5 {
+    position: absolute;
+    top: 8%;
+    left: 12%; }
+  .writeto-us .contact-form-area input {
+    padding: 10px !important; }
+  .writeto-us .contact-form-area textarea, .writeto-us .contact-form-area form input {
+    padding: 10px !important; }
+
+.info-area {
+  position: relative; }
+  .info-area img {
+    width: inherit; }
+  .info-area .info-shapes .info-s-1 {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    transform: rotate(-171deg); }
+  .info-area .info-shapes .info-s-2 {
+    position: absolute;
+    top: 3%;
+    right: 0; }
+  .info-area .single-info {
+    border: 1px solid #e6e6e6;
+    padding: 15px 20px;
+    border-radius: 5px;
+    height: 100%;
+    background: #ffffff;
+    margin-bottom: 30px; }
+    @media (max-width: 767.98px) {
+      .info-area .single-info {
+        height: inherit; } }
+    .info-area .single-info .info-img {
+      margin-right: 10px;
+      margin-bottom: 20px; }
+      .info-area .single-info .info-img img {
+        width: inherit; }
+    .info-area .single-info .info-content p {
+      padding-top: 10px; }
+
+.map-area {
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .map-area .map-shapes {
+      display: none; } }
+  .map-area .map-shapes img {
+    width: inherit; }
+  .map-area .map-shapes .ms-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .map-area iframe {
+    width: 100%; }
+
+/* 404 Page */
+.error-area {
+  position: relative; }
+  .error-area .btn, .error-area .btn2 {
+    outline: none; }
+    .error-area .btn:focus, .error-area .btn2:focus {
+      outline: none; }
+    .error-area .btn:hover, .error-area .btn2:hover {
+      color: #cc3333;
+      border: 1px solid #cc3333;
+      background: transparent; }
+  @media (max-width: 767.98px) {
+    .error-area .error-shapes {
+      display: none; } }
+  .error-area .error-shapes img {
+    width: inherit; }
+  .error-area .error-shapes .e-s-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .error-area .error-shapes .e-s-2 {
+    position: absolute;
+    top: 20%;
+    right: 0; }
+  .error-area .error-wrapper img {
+    margin: auto;
+    width: 40%; }
 
 .comingsoon-area {
   background: #ffffff;
