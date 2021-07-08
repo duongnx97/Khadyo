@@ -1,0 +1,154 @@
+/*  Single Dish Page  */
+.portfolio-banner {
+    position: relative;
+
+    .banner-shapes {
+        img {
+            width: inherit;
+        }
+
+        .bs1 {
+            @include absoluteTopRight(28%, 1%);
+        }
+
+        .bs2 {
+            @include absoluteTopRight(50%, 16%);
+        }
+    }
+
+    .inner-portfolio-box {
+        position: relative;
+
+        .play-btn {
+            @include absoluteTopLeft(50%);
+            transform    : translate(-50%, -50%);
+            width        : 80px;
+            height       : 80px;
+            line-height  : 80px;
+            display      : block;
+            background   : $cl-red;
+            text-align   : center;
+            border-radius: 50%;
+            color        : $cl-white;
+        }
+    }
+}
+
+.portfolio-info {
+    position: relative;
+
+    h2 {
+        font-weight: 900;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    .portfolio-shapes {
+        img {
+            width: inherit;
+        }
+
+        .ps1 {
+            @include absoluteTopLeft(0, 5%);
+        }
+
+        span {
+            &.ps2 {
+                @include absoluteTopLeft(11%, 17%);
+            }
+
+            &.ps3 {
+                @include absoluteTopLeft(12%, 0);
+                transform: rotate(524deg);
+            }
+
+            &.ps4 {
+                @include absoluteTopRight(26%, 0);
+            }
+
+            &.ps5 {
+                @include absoluteBottomRight();
+            }
+        }
+    }
+
+    .portfolio-info-left {
+        position     : relative;
+        background   : $cl-red;
+        border-radius: 5px;
+        padding      : 35px 25px 21px 30px;
+        color        : $cl-white;
+        margin-top   : -23%;
+
+        .cat-pos {
+            position: absolute;
+            left    : 36%;
+
+            .social-icon {
+                transition: .5s;
+
+                &:hover {
+                    color: $cl-orange;
+                }
+            }
+        }
+
+        img {
+            width: inherit;
+        }
+
+
+        .s1 {
+            @include absoluteTopLeft();
+            z-index : 33;
+        }
+        
+        .s2 {
+            @include absoluteBottomRight();
+            z-index : 33;
+        }
+
+        h5 {
+            color        : $cl-white;
+            position     : relative;
+            z-index      : 40;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom : 15px;
+            text-transform: capitalize;
+            font-weight   : 600 !important;
+            position      : relative;
+            z-index       : 111;
+            font-family   : $font-pop;
+
+            span {
+                font-weight: 400;
+                font-family: $font-rob;
+
+                a {
+                    color      : $cl-white;
+                    margin-left: 10px;
+
+                    &:hover {
+                        transform        : rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio-info-right {
+        padding: 50px 40px;
+
+        .inner-portfolio-gallery {
+            img {
+                width        : inherit;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
