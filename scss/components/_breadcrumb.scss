@@ -24,15 +24,15 @@
         }
 
         .b-shape-2 {
-            @include absoluteBottomLeft(0, 50%);
-            transform: rotate(150deg);
+            @include absoluteBottomLeft(70px, 25%);
+            transform: rotate(260deg);
             @include responsive(767) {
                 display: none;
             }
         }
 
         .b-shape-3 {
-            @include absoluteTopLeft(55%, 15%);
+            @include absoluteTopLeft(43%, 8%);
             width: 85px;
             @include responsive(1199) {
                 display: none;

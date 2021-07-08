@@ -1,0 +1,38 @@
+  /* Signup Page*/
+  .signup-area {
+    .signup-form-area {
+        .login-btn {
+            display          : flex;
+            align-items      : center;
+            justify-content  : space-between;
+            flex-wrap        : wrap;
+
+            button {
+                @include responsive(1199) {
+                    display: block;
+                    width: 100%;
+                }
+                @include responsive(575) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            span {
+                color         : $cl-blue;
+                text-transform: capitalize;
+                display       : inline-block;
+                margin-top    : 25px;
+                margin-left   : 10px;
+                text-align    : right;
+                @include responsive(575) {
+                    display: block;
+                }
+
+                a {
+                    color: $cl-red;
+                }
+            }
+        }
+    }
+}
