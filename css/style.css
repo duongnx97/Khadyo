@@ -2205,7 +2205,7 @@ ul.slick-dots {
   position: relative; }
   .pizza-banner .pizza-shapes img {
     width: inherit; }
-  .pizza-banner .pizza-shapes .ps1 {
+  .pizza-banner .pizza-shapes .ps1, .pizza-banner .pizza-shapes .shopping-cart .shopping-shapes span.ps3, .shopping-cart .shopping-shapes .pizza-banner .pizza-shapes span.ps3, .pizza-banner .pizza-shapes .shopping-cart .shopping-shapes span.ps4, .shopping-cart .shopping-shapes .pizza-banner .pizza-shapes span.ps4 {
     position: absolute;
     top: 109%;
     right: 0; }
@@ -2869,8 +2869,8 @@ ul.slick-dots {
     width: inherit; }
   .portfolio-banner .banner-shapes .bs1 {
     position: absolute;
-    top: 1%;
-    right: 28%; }
+    top: 28%;
+    right: 1%; }
   .portfolio-banner .banner-shapes .bs2 {
     position: absolute;
     top: 50%;
@@ -2899,7 +2899,7 @@ ul.slick-dots {
     margin-top: 20px; }
   .portfolio-info .portfolio-shapes img {
     width: inherit; }
-  .portfolio-info .portfolio-shapes .ps1 {
+  .portfolio-info .portfolio-shapes .ps1, .portfolio-info .portfolio-shapes .shopping-cart .shopping-shapes span.ps3, .shopping-cart .shopping-shapes .portfolio-info .portfolio-shapes span.ps3, .portfolio-info .portfolio-shapes .shopping-cart .shopping-shapes span.ps4, .shopping-cart .shopping-shapes .portfolio-info .portfolio-shapes span.ps4 {
     position: absolute;
     top: 0;
     left: 5%; }
@@ -2971,6 +2971,153 @@ ul.slick-dots {
     .portfolio-info .portfolio-info-right .inner-portfolio-gallery img {
       width: inherit;
       margin-bottom: 20px; }
+
+/* Shoping Cart */
+.shopping-cart {
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .shopping-cart .shopping-shapes {
+      display: none; } }
+  .shopping-cart .shopping-shapes img {
+    width: inherit; }
+  .shopping-cart .shopping-shapes span.ps1, .shopping-cart .shopping-shapes span.ps3, .shopping-cart .shopping-shapes span.ps4 {
+    position: absolute;
+    top: 29%;
+    left: 4%; }
+    @media (min-width: 1200px) and (max-width: 1439.98px) {
+      .shopping-cart .shopping-shapes span.ps1, .shopping-cart .shopping-shapes span.ps3, .shopping-cart .shopping-shapes span.ps4 {
+        display: none; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .shopping-cart .shopping-shapes span.ps1, .shopping-cart .shopping-shapes span.ps3, .shopping-cart .shopping-shapes span.ps4 {
+        display: none; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .shopping-cart .shopping-shapes span.ps1, .shopping-cart .shopping-shapes span.ps3, .shopping-cart .shopping-shapes span.ps4 {
+        display: none; } }
+  .shopping-cart .shopping-shapes span.pss2 {
+    position: absolute;
+    bottom: 33%;
+    right: 17%;
+    z-index: -1; }
+  .shopping-cart .shopping-shapes span.ps3 {
+    position: absolute;
+    top: 40%;
+    left: 1%; }
+  .shopping-cart .shopping-shapes span.ps4 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: unset; }
+  .shopping-cart .shopping-shapes span.pss5 {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .shopping-cart .shopping-shapes span.ps6 {
+    position: absolute;
+    top: 4%;
+    left: 2%; }
+  .shopping-cart .upper-table .upper-t-left input[type="text"] {
+    border: 1px solid #e6e6e6;
+    padding: 12px 55px;
+    border-radius: 10px;
+    text-transform: capitalize; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .shopping-cart .upper-table .upper-t-left input[type="text"] {
+        padding: 10px 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .shopping-cart .upper-table .upper-t-left input[type="text"] {
+        padding: 10px 30px; } }
+    @media (max-width: 767.98px) {
+      .shopping-cart .upper-table .upper-t-left input[type="text"] {
+        padding: 10px; } }
+  .shopping-cart .upper-table .upper-t-left .btn, .shopping-cart .upper-table .upper-t-left .btn2 {
+    padding: 12px 55px; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .shopping-cart .upper-table .upper-t-left .btn, .shopping-cart .upper-table .upper-t-left .btn2 {
+        padding: 10px 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .shopping-cart .upper-table .upper-t-left .btn, .shopping-cart .upper-table .upper-t-left .btn2 {
+        padding: 10px 30px; } }
+    @media (max-width: 767.98px) {
+      .shopping-cart .upper-table .upper-t-left .btn, .shopping-cart .upper-table .upper-t-left .btn2 {
+        padding: 10px; } }
+  .shopping-cart .upper-table .upper-t-right .btn, .shopping-cart .upper-table .upper-t-right .btn2 {
+    padding: 12px 55px;
+    background: #FFF8EE;
+    border: 1px solid #e6e6e6;
+    color: #2a435d; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .shopping-cart .upper-table .upper-t-right .btn, .shopping-cart .upper-table .upper-t-right .btn2 {
+        padding: 10px 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .shopping-cart .upper-table .upper-t-right .btn, .shopping-cart .upper-table .upper-t-right .btn2 {
+        padding: 10px 30px; } }
+    @media (max-width: 767.98px) {
+      .shopping-cart .upper-table .upper-t-right .btn, .shopping-cart .upper-table .upper-t-right .btn2 {
+        padding: 10px 30px; } }
+    .shopping-cart .upper-table .upper-t-right .btn:hover, .shopping-cart .upper-table .upper-t-right .btn2:hover {
+      color: #ffffff;
+      background: #cc3333; }
+  .shopping-cart table thead.table-one-head {
+    background: #ffedee; }
+    .shopping-cart table thead.table-one-head tr.table-one-tr th {
+      border-right: 1px solid #e6e6e6;
+      padding: 15px 50px;
+      text-transform: capitalize;
+      font-size: 18px; }
+      .shopping-cart table thead.table-one-head tr.table-one-tr th:nth-child(4), .shopping-cart table thead.table-one-head tr.table-one-tr th:nth-child(5) {
+        border-right: 1px solid transparent; }
+  .shopping-cart table tbody tr {
+    border: 5px solid #ffffff; }
+    .shopping-cart table tbody tr td {
+      padding: 15px 50px;
+      background: #FFF8EE;
+      border-right: 1px solid #e6e6e6;
+      font-size: 18px;
+      font-weight: 700; }
+      .shopping-cart table tbody tr td:nth-child(4), .shopping-cart table tbody tr td:nth-child(5) {
+        border-right: 1px solid transparent; }
+      .shopping-cart table tbody tr td .remove {
+        background: #cc3333;
+        width: 25px;
+        height: 25px;
+        display: block;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        opacity: .5;
+        transition: .3s;
+        transform: rotate(44deg); }
+        .shopping-cart table tbody tr td .remove a {
+          color: #ffffff; }
+          .shopping-cart table tbody tr td .remove a:hover {
+            opacity: 1; }
+      .shopping-cart table tbody tr td .table-img img {
+        width: 100%;
+        background: #ffedee;
+        border-radius: 50%;
+        padding: 10px; }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .shopping-cart table tbody tr td .table-img img {
+            padding: 0; } }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .shopping-cart table tbody tr td .table-img img {
+            padding: 0;
+            display: none; } }
+  .shopping-cart .lower-table h6 {
+    background-color: #ffedee;
+    color: #2a435d;
+    padding: 15px 30px;
+    font-family: "Roboto", sans-serif; }
+  .shopping-cart .lower-table .lower-table-info {
+    background-color: #FFF8EE;
+    padding: 30px; }
+    .shopping-cart .lower-table .lower-table-info ul li {
+      font-weight: 700;
+      font-family: "Roboto", sans-serif; }
+    .shopping-cart .lower-table .lower-table-info button.btn, .shopping-cart .lower-table .lower-table-info button.btn2 {
+      padding: 12px 55px;
+      width: 100%;
+      margin-top: 30px; }
 
 /* Contact Page */
 .writeto-us {
@@ -3046,6 +3193,63 @@ ul.slick-dots {
     right: 0; }
   .map-area iframe {
     width: 100%; }
+
+/* Login Page*/
+.login-area .login-form-area .google-button a.btn, .login-area .login-form-area .google-button a.btn2 {
+  width: 100%;
+  margin-bottom: 30px; }
+.login-area .login-form-area .checkbox-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .login-area .login-form-area .checkbox-area .checkbox-part {
+    display: flex;
+    align-items: center;
+    color: #2a435d;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: initial;
+    margin-top: 5px; }
+    .login-area .login-form-area .checkbox-area .checkbox-part input[type="checkbox"] {
+      display: inline-block;
+      width: initial;
+      margin-top: 12px;
+      margin-right: 10px; }
+    .login-area .login-form-area .checkbox-area .checkbox-part label {
+      cursor: pointer; }
+  .login-area .login-form-area .checkbox-area .forgot-pas a {
+    color: #2a435d;
+    text-transform: capitalize;
+    cursor: pointer; }
+    .login-area .login-form-area .checkbox-area .forgot-pas a:hover {
+      color: #cc3333; }
+
+/* Signup Page*/
+.signup-area .signup-form-area .login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .signup-area .signup-form-area .login-btn button {
+      display: block;
+      width: 100%; } }
+  @media (max-width: 575.98px) {
+    .signup-area .signup-form-area .login-btn button {
+      display: block;
+      width: 100%; } }
+  .signup-area .signup-form-area .login-btn span {
+    color: #2a435d;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 10px;
+    text-align: right; }
+    @media (max-width: 575.98px) {
+      .signup-area .signup-form-area .login-btn span {
+        display: block; } }
+    .signup-area .signup-form-area .login-btn span a {
+      color: #cc3333; }
 
 /* 404 Page */
 .error-area {
@@ -3166,16 +3370,16 @@ ul.slick-dots {
         display: none; } }
   .breadcrumb-area .bread-shapes .b-shape-2 {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: rotate(150deg); }
+    bottom: 70px;
+    left: 25%;
+    transform: rotate(260deg); }
     @media (max-width: 767.98px) {
       .breadcrumb-area .bread-shapes .b-shape-2 {
         display: none; } }
   .breadcrumb-area .bread-shapes .b-shape-3 {
     position: absolute;
-    top: 55%;
-    left: 15%;
+    top: 43%;
+    left: 8%;
     width: 85px; }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .breadcrumb-area .bread-shapes .b-shape-3 {

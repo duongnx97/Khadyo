@@ -1,0 +1,234 @@
+/* Shoping Cart */
+.shopping-cart {
+    position: relative;
+
+    .shopping-shapes {
+        @include responsive(767) {
+            display: none;
+        }
+
+        img {
+            width: inherit;
+        }
+
+        span {
+            &.ps1 {
+                @include absoluteTopLeft(29%, 4%);
+
+                @include responsive(1439) {
+                    display: none;
+                }
+
+                @include responsive(1199) {
+                    display: none;
+                }
+
+                @include responsive(991) {
+                    display: none;
+                }
+            }
+
+            &.pss2 {
+                @include absoluteBottomRight(33%, 17%);
+                z-index: -1;
+            }
+
+            &.ps3 {
+                @extend .ps1;
+                @include absoluteTopLeft(40%, 1%);
+            }
+
+            &.ps4 {
+                @extend .ps1;
+                @include absoluteTopRight(40%, 0);
+                left: unset;
+            }
+
+            &.pss5 {
+                @include absoluteBottomRight();
+            }
+
+            &.ps6 {
+                @include absoluteTopLeft(4%, 2%);
+            }
+        }
+    }
+
+    .upper-table {
+        .upper-t-left {
+            input[type="text"] {
+                border        : 1px solid $cl-white1;
+                padding       : 12px 55px;
+                border-radius : 10px;
+                text-transform: capitalize;
+
+                @include responsive(1199) {
+                    padding: 10px 30px;
+                }
+
+                @include responsive(991) {
+                    padding: 10px 30px;
+                }
+
+                @include responsive(767) {
+                    padding: 10px;
+                }
+            }
+
+            .btn {
+                padding: 12px 55px;
+
+                @include responsive(1199) {
+                    padding: 10px 30px;
+                }
+
+                @include responsive(991) {
+                    padding: 10px 30px;
+                }
+
+                @include responsive(767) {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .upper-t-right {
+            .btn {
+                padding   : 12px 55px;
+                background: $cl-white2;
+                border    : 1px solid $cl-white1;
+                color     : $cl-blue;
+
+                @include responsive(1199) {
+                    padding: 10px 30px;
+                }
+
+                @include responsive(991) {
+                    padding: 10px 30px;
+                }
+
+                @include responsive(767) {
+                    padding: 10px 30px;
+                }
+
+                &:hover {
+                    color     : $cl-white;
+                    background: $cl-red;
+                }
+            }
+        }
+    }
+
+    table {
+        thead {
+            &.table-one-head {
+                background: $cl-whitepink;
+
+                tr {
+                    &.table-one-tr {
+                        th {
+                            border-right  : 1px solid $cl-white1;
+                            padding       : 15px 50px;
+                            text-transform: capitalize;
+                            font-size     : 18px;
+
+                            &:nth-child(4) {
+                                border-right: 1px solid transparent;
+                            }
+
+                            &:nth-child(5) {
+                                @extend :nth-child(4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border: 5px solid $cl-white;
+
+                td {
+                    padding     : 15px 50px;
+                    background  : $cl-white2;
+                    border-right: 1px solid $cl-white1;
+                    font-size   : 18px;
+                    font-weight : 700;
+
+                    &:nth-child(4) {
+                        border-right: 1px solid transparent;
+                    }
+
+                    &:nth-child(5) {
+                        @extend :nth-child(4);
+                    }
+
+                    .remove {
+                        background   : $cl-red;
+                        width        : 25px;
+                        height       : 25px;
+                        display      : block;
+                        line-height  : 25px;
+                        text-align   : center;
+                        border-radius: 50%;
+                        opacity      : .5;
+                        transition   : .3s;
+                        transform    : rotate(44deg);
+
+                        a {
+                            color: $cl-white;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .table-img {
+                        img {
+                            width        : 100%;
+                            background   : $cl-whitepink;
+                            border-radius: 50%;
+                            padding      : 10px;
+                            @include responsive(1199) {
+                                padding: 0;
+                            }
+                            @include responsive(991) {
+                                padding: 0;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .lower-table {
+        h6 {
+            background-color: $cl-whitepink;
+            color           : $cl-blue;
+            padding         : 15px 30px;
+            font-family     : $font-rob;
+        }
+
+        .lower-table-info {
+            background-color: $cl-white2;
+            padding         : 30px;
+
+            ul {
+                li {
+                    font-weight: 700;
+                    font-family: $font-rob;
+                }
+            }
+
+            button.btn {
+                padding   : 12px 55px;
+                width     : 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}
