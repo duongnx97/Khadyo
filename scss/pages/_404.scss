@@ -1,0 +1,43 @@
+/* 404 Page */
+.error-area {
+    position: relative;
+
+    .btn {
+        outline: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color     : $cl-red;
+            border    : 1px solid $cl-red;
+            background: transparent;
+        }
+    }
+
+    .error-shapes {
+        @include responsive(767) {
+            display: none;
+        }
+
+        img {
+            width: inherit;
+        }
+
+        .e-s-1 {
+            @include absoluteBottomRight;
+        }
+
+        .e-s-2 {
+            @include absoluteTopRight(20%, 0);
+        }
+    }
+
+    .error-wrapper {
+        img {
+            margin: auto;
+            width: 40%;
+        }
+    }
+}

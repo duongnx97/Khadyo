@@ -207,60 +207,6 @@
     }
 }
 
-/* Small dialog */
-div#small-dialog {
-    .mfp-container {
-        width: 45%;
-        height: 45%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0;
-        @include responsive(1199) {
-            width: 60%;
-        }
-        @include responsive(991) {
-            width: 70%;
-        }
-        @include responsive(767) {
-            width: 80%;
-            height: 300px;
-        }
-        @include responsive(575) {
-            width: 100%;
-        }
-    }
-
-    .mfp-close {
-        @include absoluteTopRight(-70px, 0);
-        text-decoration: none;
-        text-align: center;
-        padding: 10px;
-        color: #FFF;
-        font-size: 30px;
-        background: transparent;
-
-        &::before {
-            @include absoluteTopLeft (50%);
-            content: '';
-            width: 30px;
-            height: 30px;
-            border-radius: 100%;
-            border: 3px solid #eee;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 0 0 $cl-red;
-            animation: ring 2s infinite;
-        }
-    }
-
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 /* Popular menu */
 .menu-area {
     .menu-nav-wrapper {
