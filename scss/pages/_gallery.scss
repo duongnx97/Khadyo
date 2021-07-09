@@ -1,0 +1,87 @@
+/* Gallery Page  */
+.main-gallery {
+    .pshapes {
+        @include responsive(767)  {
+            display: none;
+        }
+    }
+
+    .gallery-btn {
+        margin-right: 50px;
+        @include responsive(767) {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            font-family       : $font-pop;
+            font-size         : 18px;
+            border            : none;
+            background        : transparent;
+            transition        : .3s;
+            text-transform    : capitalize;
+            font-weight       : 600;
+            padding           : 12px 25px;
+            border-radius     : 5px;
+            @include responsive(767) {
+                font-size: 14px;
+                padding: 6px 6px;
+            }
+
+            &.active {
+                background: $cl-red;
+                color     : $cl-white;
+            }
+
+            &:hover {
+                @extend .active;
+            }
+        }
+    }
+
+    .gallery-img {
+        margin-bottom     : 20px;
+        position          : relative;
+        height            : 280px;
+        width             : 100%;
+        transition        : .5s;
+
+        &:hover {
+            .gallery-info {
+                visibility: visible;
+                opacity   : .9;
+                left      : 0;
+            }
+        }
+
+        img {
+            width : 100%;
+            height: 100%;
+        }
+
+        .gallery-info {
+            @include absoluteBottomLeft();
+            width             : 70%;
+            height            : 80%;
+            background        : $cl-red;
+            opacity           : 0;
+            display           : flex;
+            justify-content   : center;
+            align-items       : center;
+            visibility        : hidden;
+            transition        : .5s;
+
+            .inner-info {
+                p {
+                    color         : $cl-white;
+                    text-transform: capitalize;
+                    margin-bottom : 0;
+                }
+
+                h6 {
+                    color: $cl-white;
+                }
+            }
+        }
+    }
+}
