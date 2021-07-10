@@ -133,8 +133,7 @@ petspatial
 
 Hiện tại, chúng tôi chính thức hướng tới việc hỗ trợ hai phiên bản cuối cùng của các trình duyệt sau:
 
-<img src="images/icons/chrome.png" width="64" height="64">
-<img src="images/icons/firefox.png" width="64" height="64">
+<img src="images/icons/chrome.png" width="64" height="64"> <img src="images/icons/firefox.png" width="64" height="64">
 
 ## Vấn đề không mong muốn
 
