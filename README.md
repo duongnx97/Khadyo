@@ -22,7 +22,7 @@ Tùy chọn cài đặt:
 ## Sơ đồ cấu trúc File
 Trong phần tải xuống, bạn sẽ tìm thấy các thư mục và tệp sau:
 ```bash
-petspatial
+khadyo
 .
 ├── index.php
 ├── index.html
@@ -58,25 +58,25 @@ petspatial
 │   └── fa-solid-900.woff2
 ├── images
 │   ├── bg
-│   │   └── *...
+│   │   └── *
 │   ├── blog
-│   │   └── *...
+│   │   └── *
 │   ├── gallery
-│   │   └── *...
+│   │   └── *
 │   ├── icons
-│   │   └── *...
+│   │   └── *
 │   ├── img
-│   │   └── *...
+│   │   └── *
 │   ├── logo
-│   │   └── *...
+│   │   └── *
 │   ├── menu-item
-│   │   └── *...
+│   │   └── *
 │   ├── shapes
-│   │   └── *...
+│   │   └── *
 │   ├── team
-│   │   └── *...
+│   │   └── *
 │   └── testimonial
-│       └── *...
+│       └── *
 ├── js
 │   ├── vendor
 │   │   ├── bootstrap.min.js
