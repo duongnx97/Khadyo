@@ -1,0 +1,333 @@
+/* Food Page*/
+.food-area-wrapper {
+    position: relative;
+
+    .pshapes {
+        img {
+            width: inherit;
+        }
+
+        .ps-1 {
+            @include absoluteTopRight(50%, 0);
+        }
+
+        .ps-2 {
+            @include absoluteTopLeft(27%, 5%);
+        }
+
+        .ps-4 {
+            @include absoluteBottomLeft(38%, 8%);
+        }
+
+        .ps3 {
+            @include absoluteTopRight(24%, 0);
+        }
+
+        .ps-5 {
+            @include absoluteTopRight(40%, 17%);
+        }
+
+        .ps-6 {
+            @include absoluteBottomRight(-6%, 0);
+        }
+
+        .ps-7 {
+            @include absoluteBottomLeft(18%, 16%);
+        }
+    }
+
+    .sidebar-widget-1 {
+        padding      : 50px 0;
+        border       : 1px solid $cl-white1;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background   : $cl-white;
+
+        h5 {
+            margin-bottom: 20px;
+            padding-left : 15px;
+            padding-right: 15px;
+        }
+
+        .sidebar-widget {
+            border-bottom: 1px solid $cl-white1;
+            padding      : 20px 15px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .dish-img {
+                margin-right: 10px;
+
+                img {
+                    width: 75px;
+                }
+            }
+
+            .small-dish-img {
+                margin-right: 10px;
+
+                img {
+                    width: 50px;
+                }
+            }
+
+            .dish-content {
+                h6 {
+                    margin-bottom: 10px;
+
+                    a {
+                        color     : $cl-blue;
+                        transition: .5s;
+
+                        &:hover {
+                            color: $cl-red;
+                        }
+                    }
+                }
+
+                a {
+                    &.cart-select {
+                        color             : $cl-red;
+                        background        : transparent;
+                        transition        : .5s;
+                        border            : 1px solid $cl-red;
+                        width             : 30px;
+                        height            : 30px;
+                        line-height       : 30px;
+                        border-radius     : 50%;
+                        display           : inline-block;
+                        text-align        : center;
+                        margin-left       : 10px;
+
+                        &:hover {
+                            color     : $cl-white;
+                            background: $cl-red;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .sidebar-widget-2 {
+        padding      : 50px 10px;
+        border       : 1px solid $cl-white1;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background   : $cl-white;
+
+        .filter-sidebar {
+            position: relative;
+
+            .ui-widget {
+                &.ui-widget-content {
+                    border: 1px solid $cl-red;
+                    height: 1px;
+                }
+            }
+
+            .ui-slider-handle {
+                &.ui-corner-all {
+                    &.ui-state-default {
+                        border-radius   : 50%;
+                        background-color: $cl-red;
+                        border          : 1px solid transparent;
+                        outline         : none;
+                        width           : 10px;
+                        height          : 10px;
+
+                        &.ui-state-active {
+                            border-radius   : 50%;
+                            background-color: $cl-red;
+                            border          : 1px solid transparent;
+                        }
+                    }
+                }
+            }
+
+            .textbold {
+                font-weight: 500;
+                color      : $cl-blue;
+                border     : none;
+                font-family: $font-rob;
+            }
+
+            button {
+                &.btn {
+                    padding      : 2px 14px;
+                    border-radius: 0;
+                    font-weight  : 500;
+                    font-family  : $font-rob;
+                    @include absoluteTopRight(47%, 5%);
+                }
+            }
+        }
+    }
+
+    .sidebar-widget-3 {
+        padding      : 50px 10px;
+        border       : 1px solid $cl-white1;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background   : $cl-white;
+
+        h5 {
+            a {
+                color: $cl-blue;
+            }
+        }
+
+        .sidebar-widget {
+            padding: 20px 0;
+
+            .dish-img {
+                margin-right: 20px;
+
+                img {
+                    width: inherit;
+                }
+            }
+
+            .dish-content {
+                h6 {
+                    font-size  : 14px;
+                    font-weight: 700;
+
+                    a {
+                        color: $cl-blue;
+                    }
+                }
+
+                span {
+                    margin-left: 20px;
+                    position   : absolute;
+                    right      : 50px;
+                }
+            }
+        }
+    }
+
+    .sidebar-widget-4 {
+        .gallery-img-4 {
+            background: $cl-red;
+            height    : 450px;
+            position  : relative;
+            padding   : 30px 20px;
+            overflow  : hidden;
+            @include responsive(767) {
+                display: none;
+            }
+
+            .gshape-1 {
+                @include absoluteTopRight(5%, -17%);
+                transform        : rotate(-60deg);
+
+                img {
+                    width: inherit;
+                }
+            }
+
+            h5 {
+                color: $cl-white;
+            }
+
+            .btn {
+                color         : $cl-red;
+                background    : $cl-white;
+                padding       : 12px 15px;
+                text-transform: uppercase;
+                margin-top    : 20px;
+                border-radius : 5px;
+
+                &:hover {
+                    color     : $cl-white;
+                    background: transparent;
+                    border    : 1px solid $cl-white;
+                }
+            }
+
+            img {
+                @include absoluteBottomRight();
+                width       : 150%;
+                margin-right: -60%;
+            }
+
+            .gprice-4 {
+                @include absoluteTopRight(36%, 19%);
+                width   : 75px;
+
+                img {
+                    width: inherit;
+                }
+            }
+        }
+    }
+
+    .food-area {
+        position  : relative;
+        overflow  : hidden;
+        background: inherit !important;
+
+        nav {
+            background   : $cl-whitesmoke;
+            padding-right: 30px;
+            padding-left : 30px;
+            @include responsive(767) {
+                justify-content: center;
+            }
+
+            .sorting-area {
+                @include responsive(767) {
+                    margin: 20px auto 0 auto;
+                }
+            }
+
+            .nav-link {
+                padding           : 10px 25px;
+                transition        : .3s;
+
+                &.active {
+                    background: transparent;
+                    color     : $cl-red;
+                }
+            }
+
+            span {
+                text-transform: capitalize;
+            }
+        }
+
+        select {
+            border          : 1px solid transparent;
+            background-color: $cl-whitesmoke;
+        }
+    }
+
+    .pagination-area {
+        .pagination {
+            display: inline-block;
+
+            a {
+                color             : $cl-red;
+                background        : transparent;
+                float             : left;
+                padding           : 8px 10px;
+                border            : 1px solid $cl-red;
+                text-decoration   : none;
+                margin-right      : 10px;
+                border-radius     : 5px;
+                font-weight       : 700;
+                font-family       : $font-pop;
+                transition        : .5s;
+
+                &.active {
+                    background: $cl-red;
+                    color     : $cl-white;
+                }
+            }
+        }
+    }
+}
