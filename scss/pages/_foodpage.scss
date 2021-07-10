@@ -84,24 +84,26 @@
                         &:hover {
                             color: $cl-red;
                         }
+                    }
+                }
 
-                        &.cart-select {
-                            color             : $cl-red;
-                            background        : transparent;
-                            transition        : .5s;
-                            border            : 1px solid $cl-red;
-                            width             : 30px;
-                            height            : 30px;
-                            line-height       : 30px;
-                            border-radius     : 50%;
-                            display           : inline-block;
-                            text-align        : center;
-                            margin-left       : 10px;
+                a {
+                    &.cart-select {
+                        color             : $cl-red;
+                        background        : transparent;
+                        transition        : .5s;
+                        border            : 1px solid $cl-red;
+                        width             : 30px;
+                        height            : 30px;
+                        line-height       : 30px;
+                        border-radius     : 50%;
+                        display           : inline-block;
+                        text-align        : center;
+                        margin-left       : 10px;
 
-                            &:hover {
-                                color     : $cl-white;
-                                background: $cl-red;
-                            }
+                        &:hover {
+                            color     : $cl-white;
+                            background: $cl-red;
                         }
                     }
                 }

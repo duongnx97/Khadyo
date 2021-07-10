@@ -3242,21 +3242,21 @@ ul.slick-dots {
           transition: .5s; }
           .food-area-wrapper .sidebar-widget-1 .sidebar-widget .dish-content h6 a:hover {
             color: #cc3333; }
-          .food-area-wrapper .sidebar-widget-1 .sidebar-widget .dish-content h6 a.cart-select {
-            color: #cc3333;
-            background: transparent;
-            transition: .5s;
-            border: 1px solid #cc3333;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            border-radius: 50%;
-            display: inline-block;
-            text-align: center;
-            margin-left: 10px; }
-            .food-area-wrapper .sidebar-widget-1 .sidebar-widget .dish-content h6 a.cart-select:hover {
-              color: #ffffff;
-              background: #cc3333; }
+      .food-area-wrapper .sidebar-widget-1 .sidebar-widget .dish-content a.cart-select {
+        color: #cc3333;
+        background: transparent;
+        transition: .5s;
+        border: 1px solid #cc3333;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px; }
+        .food-area-wrapper .sidebar-widget-1 .sidebar-widget .dish-content a.cart-select:hover {
+          color: #ffffff;
+          background: #cc3333; }
   .food-area-wrapper .sidebar-widget-2 {
     padding: 50px 10px;
     border: 1px solid #e6e6e6;
